@@ -1,0 +1,51 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Conceptos introductorios}{3}{}%
+\contentsline {section}{\numberline {1.1}Algunas definiciones importantes}{3}{}%
+\contentsline {chapter}{\numberline {2}10 principios de la economia}{5}{}%
+\contentsline {section}{\numberline {2.1}Principios 1 - 4: ¿Cómo toman decisiones los individuos}{5}{}%
+\contentsline {subsection}{\numberline {2.1.1}Principio de la disyuntiva}{5}{}%
+\contentsline {subsection}{\numberline {2.1.2}Principio del coste de oportunidad}{5}{}%
+\contentsline {subsection}{\numberline {2.1.3}Principio del pensamiento marginal}{6}{}%
+\contentsline {subsection}{\numberline {2.1.4}Principio de los incentivos}{6}{}%
+\contentsline {section}{\numberline {2.2}Principios 5 - 7: ¿Cómo interactúan los individuos?}{6}{}%
+\contentsline {subsection}{\numberline {2.2.1}El comercio puede mejorar el bienestar de todo el mundo}{6}{}%
+\contentsline {subsection}{\numberline {2.2.2}Los mercados normalmente constituyen un buen mecanismo para organizar la actividad económica}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Fallas de mercado}{7}{}%
+\contentsline {section}{\numberline {2.3}Principios 8 - 10: ¿Cómo funciona la economía en su conjunto?}{7}{}%
+\contentsline {subsection}{\numberline {2.3.1}Productividad y nivel de vida}{7}{}%
+\contentsline {subsection}{\numberline {2.3.2}Los precios suben cuando el gobierno imprime demasiado dinero}{7}{}%
+\contentsline {subsection}{\numberline {2.3.3}Tradeoff a corto plazo entre inflación y desempleo}{8}{}%
+\contentsline {chapter}{\numberline {3}Pensar como un economista}{10}{}%
+\contentsline {section}{\numberline {3.1}El economista como un científico}{10}{}%
+\contentsline {section}{\numberline {3.2}Los modelos económicos}{11}{}%
+\contentsline {subsection}{\numberline {3.2.1}Primer modelo. El diagrama del flujo circular}{11}{}%
+\contentsline {subsection}{\numberline {3.2.2}Segundo modelo: La frontera de posibilidades de producción}{12}{}%
+\contentsline {section}{\numberline {3.3}La microeconomía y la macroeconomía}{13}{}%
+\contentsline {subsection}{\numberline {3.3.1}Análisis positivo y normativo}{13}{}%
+\contentsline {subsection}{\numberline {3.3.2}Por qué discrepan los economistas}{13}{}%
+\contentsline {chapter}{\numberline {4}Microeconomía}{15}{}%
+\contentsline {section}{\numberline {4.1}Las fuerzas del mercado}{15}{}%
+\contentsline {section}{\numberline {4.2}Tipos de mercado y la competencia}{15}{}%
+\contentsline {section}{\numberline {4.3}Ley de demanda}{16}{}%
+\contentsline {section}{\numberline {4.4}Ley de oferta}{16}{}%
+\contentsline {section}{\numberline {4.5}Equilibrio}{16}{}%
+\contentsline {section}{\numberline {4.6}Cambio de equilibrio}{16}{}%
+\contentsline {section}{\numberline {4.7}Ley de oferta y demanda}{17}{}%
+\contentsline {section}{\numberline {4.8}Politica economica}{17}{}%
+\contentsline {subsection}{\numberline {4.8.1}Precio maximo}{17}{}%
+\contentsline {subsection}{\numberline {4.8.2}Precio minimo}{17}{}%
+\contentsline {section}{\numberline {4.9}Esquema fotito}{17}{}%
+\contentsline {chapter}{\numberline {5}Macroeconomia}{18}{}%
+\contentsline {section}{\numberline {5.1}Posibles definiciones}{18}{}%
+\contentsline {section}{\numberline {5.2}Inflacion}{18}{}%
+\contentsline {subsection}{\numberline {5.2.1}IPC}{19}{}%
+\contentsline {subsection}{\numberline {5.2.2}Caracteristicas}{19}{}%
+\contentsline {subsection}{\numberline {5.2.3}Criticas}{19}{}%
+\contentsline {subsection}{\numberline {5.2.4}Otras cosas}{19}{}%
+\contentsline {subsection}{\numberline {5.2.5}Variacion del IPC}{20}{}%
+\contentsline {section}{\numberline {5.3}PIB}{21}{}%
+\contentsline {subsection}{\numberline {5.3.1}PIB nominal}{21}{}%
+\contentsline {subsection}{\numberline {5.3.2}PIB real}{21}{}%
+\contentsline {subsection}{\numberline {5.3.3}IPI}{21}{}%
+\contentsline {subsection}{\numberline {5.3.4}PBN}{21}{}%
+\contentsline {subsection}{\numberline {5.3.5}VBP (Valor Bruto de Produccion)}{21}{}%

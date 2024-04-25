@@ -1,0 +1,11 @@
+public enum Nivel {
+    PREESCOLAR_1,
+    PREESCOLAR_2,
+    PREESCOLAR_3,
+    PRIMARIA_1,
+    PRIMARIA_2,
+    PRIMARIA_3,
+    PRIMARIA_4,
+    PRIMARIA_5,
+    PRIMARIA_6
+}
