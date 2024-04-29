@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.15)  19 APR 2024 09:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.15)  29 APR 2024 10:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -153,9 +153,38 @@ LaTeX Info: Redefining \] on input line 2954.
 \l_MT_below_shortintertext_sep=\dimen161
 \xmathstrut@box=\box53
 \xmathstrut@dim=\dimen162
-) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (c:/texlive/2024/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
+Package: dirtytalk 2010/11/21 A package making "quoting" easier
+ (c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (c:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@dirtytalk@qdepth=\count282
+) (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/texlive/2024/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+ (c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (c:/texlive/2024/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+))) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count282
+\l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box54
 ) (./medidas-instalaciones.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -163,34 +192,40 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `medidas-instalaciones.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 10.
+ (c:/texlive/2024/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
+\scratchcounter=\count284
 \scratchdimen=\dimen163
 \scratchbox=\box55
-\nofMPsegments=\count284
-\nofMParguments=\count285
+\nofMPsegments=\count285
+\nofMParguments=\count286
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count286
+\MPscratchCnt=\count287
 \MPscratchDim=\dimen164
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
 \everyMPtoPDFconversion=\toks25
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -200,12 +235,6 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (c:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
@@ -224,7 +253,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (./medidas-instalaciones.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write3
 \openout3 = `medidas-instalaciones.toc'.
 
@@ -240,21 +276,47 @@ Cap\'{\i }tulo 2.
 [5
 
 ]
+<../Assets/condensador_desacople.png, id=29, 286.82156pt x 112.16907pt>
+File: ../Assets/condensador_desacople.png Graphic file (type png)
+<use ../Assets/condensador_desacople.png>
+Package pdftex.def Info: ../Assets/condensador_desacople.png  used on input line 131.
+(pdftex.def)             Requested size: 227.62204pt x 89.01993pt.
+ [6 <../Assets/condensador_desacople.png>] [7]
 Cap\'{\i }tulo 3.
-<../Assets/voltimetro.png, id=30, 272.81924pt x 255.95625pt>
-File: ../Assets/voltimetro.png Graphic file (type png)
-<use ../Assets/voltimetro.png>
-Package pdftex.def Info: ../Assets/voltimetro.png  used on input line 106.
+<../Assets/galvanometro.png, id=40, 272.81924pt x 255.95625pt>
+File: ../Assets/galvanometro.png Graphic file (type png)
+<use ../Assets/galvanometro.png>
+Package pdftex.def Info: ../Assets/galvanometro.png  used on input line 180.
 (pdftex.def)             Requested size: 227.62204pt x 213.5567pt.
-[6
+[8
 
- <../Assets/voltimetro.png>]
-<../Assets/instrumentos_analogicos_ley_de_respuesta.png, id=36, 495.0495pt x 302.93175pt>
+ <../Assets/galvanometro.png>]
+<../Assets/instrumentos_analogicos_ley_de_respuesta.png, id=45, 495.0495pt x 302.93175pt>
 File: ../Assets/instrumentos_analogicos_ley_de_respuesta.png Graphic file (type png)
 <use ../Assets/instrumentos_analogicos_ley_de_respuesta.png>
-Package pdftex.def Info: ../Assets/instrumentos_analogicos_ley_de_respuesta.png  used on input line 116.
+Package pdftex.def Info: ../Assets/instrumentos_analogicos_ley_de_respuesta.png  used on input line 191.
 (pdftex.def)             Requested size: 227.62204pt x 139.28557pt.
- [7 <../Assets/instrumentos_analogicos_ley_de_respuesta.png>] (./medidas-instalaciones.aux
+<../Assets/amperimetro_galvanometro.jpg, id=46, 191.9672pt x 127.22531pt>
+File: ../Assets/amperimetro_galvanometro.jpg Graphic file (type jpg)
+<use ../Assets/amperimetro_galvanometro.jpg>
+Package pdftex.def Info: ../Assets/amperimetro_galvanometro.jpg  used on input line 195.
+(pdftex.def)             Requested size: 227.62204pt x 150.86418pt.
+<../Assets/voltimetro_galvanometro.png, id=47, 292.09125pt x 139.52126pt>
+File: ../Assets/voltimetro_galvanometro.png Graphic file (type png)
+<use ../Assets/voltimetro_galvanometro.png>
+Package pdftex.def Info: ../Assets/voltimetro_galvanometro.png  used on input line 199.
+(pdftex.def)             Requested size: 227.62204pt x 108.73033pt.
+ [9 <../Assets/instrumentos_analogicos_ley_de_respuesta.png> <../Assets/amperimetro_galvanometro.jpg>]
+<../Assets/amperimetro_galvanometro_ac.jpg, id=52, 752.8125pt x 564.60938pt>
+File: ../Assets/amperimetro_galvanometro_ac.jpg Graphic file (type jpg)
+<use ../Assets/amperimetro_galvanometro_ac.jpg>
+Package pdftex.def Info: ../Assets/amperimetro_galvanometro_ac.jpg  used on input line 208.
+(pdftex.def)             Requested size: 227.62204pt x 170.71947pt.
+ [10 <../Assets/voltimetro_galvanometro.png> <../Assets/amperimetro_galvanometro_ac.jpg>] [11]
+Cap\'{\i }tulo 4.
+[12
+
+] (./medidas-instalaciones.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -264,18 +326,18 @@ L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4676 strings out of 474104
- 77510 string characters out of 5747502
- 1934496 words of memory out of 5000000
- 27012 multiletter control sequences out of 15000+600000
- 561565 words of font info for 48 fonts, out of 8000000 for 9000
+ 6390 strings out of 474104
+ 98994 string characters out of 5747502
+ 1935496 words of memory out of 5000000
+ 28685 multiletter control sequences out of 15000+600000
+ 563502 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,8n,79p,347b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on medidas-instalaciones.pdf (7 pages, 360008 bytes).
+ 70i,8n,79p,347b,389s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on medidas-instalaciones.pdf (12 pages, 398954 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
