@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{tikz-timing}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
 \usetikztiminglibrary[rising arrows]{clockarrows}
 
 \begin{document}
@@ -12,15 +13,19 @@
 \tableofcontents
 
 \chapter{Introduccion}
-\section{Niveles de abstraccion}
 
-1. C99
-2. Set de instrucciones
-3. Sistemas basados en $\mu P$
-4. Circuitos secuenciales
-5. Circuitos combinatorios
-6. Mosfet-N y Mosfet-P
-7. Silicio
+El libro que se usa como referencia y de donde se sacan muchas de las imagenes es
+\href{https://p.urbanpro.com/tv-prod/documents\%2F660-932.2374.file_ref.2588.3001.pdf}{este}.
+\section{Niveles de abstraccion}
+\begin{enumerate}
+	\item C99
+	\item Set de instrucciones
+	\item Sistemas basados en $\mu P$
+	\item Circuitos secuenciales
+	\item Circuitos combinatorios
+	\item Mosfet-N y Mosfet-P
+	\item Silicio
+\end{enumerate}
 
 \section{Formato del curso}
 
@@ -32,24 +37,25 @@ Entre todos los entregables suman 50\% de la nota. La defensa individual es el o
 
 \section{Sistema analogico}
 
-sistema de transmision o procesamiento de informacion donde se representa de forma continua mediante cantidades fisicas.
+Sistema de transmision o procesamiento de informacion donde se representa de forma continua mediante cantidades fisicas.
 
 \section{Sistema digital}
 
-sistema de transmision o procesamiento de informacion en la cual la informacion se representa mediante cantidades fisicas que solo pueden asumir valores discretos.
+Sistema de transmision o procesamiento de informacion en la cual la informacion se representa mediante cantidades fisicas que solo pueden asumir valores discretos.
 
 \section{Teorema  de muestreo de Nyquit}
 
 Con una cadencia determinada, puedo tomar muestras y reconstruir exactamente la misma señal origianl.
 
 \section{Pros del digital}
-
-- Reproducibilidad de resultados.
-- Facilidad de diseño.
-- Versatilidad
-- Funcionalidad (encriptado)
-- Programabilidad
-- Economia
+\begin{itemize}
+	\item Reproducibilidad de resultados.
+	\item Facilidad de diseño.
+	\item Versatilidad
+	\item Funcionalidad (encriptado)
+	\item Programabilidad
+	\item Economia
+\end{itemize}
 
 \chapter{Sistemas numericos ponderados}
 
@@ -57,35 +63,17 @@ Sea $$N = \sum_{i=-m}^{n-1} a_i r^i= a_{n-1}r^{n-1}+...+a_1r^1+a_0r^0+a_{-1}r^{-
 $$a_i \in \{0,1,2,...,r-1\}$$
 
 \section{Cambio de base}
-
-\section{Binario, octal, hexadecimal $\to$ Decimal}
+Veamos como pasar de una base a otra.\footnote{Algunos cambios de base faltan, el que quiera puede hacer PR y agregar otros cambios de base.}
+\subsection{Binario, octal, hexadecimal $\to$ Decimal}
 
 Utilizar definicion de sistema numerico ponderado para obtener el resultado de nuevo en decimal.
 
-\section{Decimal $\to$ Binario, octal, hexadecimal}
+\subsection{Decimal $\to$ Binario, octal, hexadecimal}
 
 Dividimos la parte entera entre el numero de la base y vamos anotando el resto.
 El resultado es recolectar los restos en forma opuesta a como los obtuvimos.
 Para la parte decimal hacemos lo mismo pero multiplicando por la base.
 
-\section{Suma}
-
-Tenemos un sumador que debe poder tener como entrada un bit $a_i$ y $b_i$ a su vez de un $C_{in_i}$.
-$$\begin{array}{ccc|cc}
-		a_i & b_i & C_{in_i} & C_{out_i} & s_i \\ \hline
-		0   & 0   & 0        & 0         & 0   \\
-		0   & 0   & 1        & 0         & 1   \\
-		0   & 1   & 0        & 0         & 1   \\
-		0   & 1   & 1        & 1         & 0   \\
-		1   & 0   & 0        & 0         & 1   \\
-		1   & 0   & 1        & 1         & 0   \\
-		1   & 1   & 0        & 1         & 0   \\
-		1   & 1   & 1        & 1         & 1   \\
-	\end{array}$$
-
-Mas adelante vemos como construir este sumador con compuertas logicas
-
-Simplemente ponemos n sumadores de 1 bit en cadena, haciendo el $C_{out_i}$ el $C_{in_{i+1}}$
 
 \section{Magnitud y signo}
 
@@ -135,6 +123,25 @@ Si sos el yo del futuro y me estas puteando por no escribir esto, buscate un vid
 Simplemente se escriben los digitos de un numerod decimal en forma binaria.
 
 NO es equivalente al binario.
+
+\section{Suma}
+
+Tenemos un sumador que debe poder tener como entrada un bit $a_i$ y $b_i$ a su vez de un $C_{in_i}$.
+$$\begin{array}{ccc|cc}
+		a_i & b_i & C_{in_i} & C_{out_i} & s_i \\ \hline
+		0   & 0   & 0        & 0         & 0   \\
+		0   & 0   & 1        & 0         & 1   \\
+		0   & 1   & 0        & 0         & 1   \\
+		0   & 1   & 1        & 1         & 0   \\
+		1   & 0   & 0        & 0         & 1   \\
+		1   & 0   & 1        & 1         & 0   \\
+		1   & 1   & 0        & 1         & 0   \\
+		1   & 1   & 1        & 1         & 1   \\
+	\end{array}$$
+
+Mas adelante vemos como construir este sumador con compuertas logicas.
+Si lo que queremos hacer es construir un sumador de n-bits, simplemente ponemos n sumadores de 1 bit en cadena, haciendo el $C_{out_i}$ el $C_{in_{i+1}}$
+
 \chapter{Compuertas Logicas}
 
 \section{Inversor (Not)}
@@ -198,12 +205,9 @@ Son iguales que el AND, OR y EXOR respectivamente, pero tienen un NOT posteriorm
 
 \section{Sumador de 1 bit con compuertas logicas}
 
-\includegraphics[width=10cm]{../Assets/SumadorCompleto.png}
+\includegraphics[width=8cm]{../Assets/SumadorCompleto.png}
 
 El $\sum$ representa el $s_i$
-
-
-\section{Introduccion: Combinatorio y secuencial}
 
 \section{Mulfiplexor de 16:1}
 Tenemos 16 canales, todos conectados al multiplexor y tenemos 4 entradas que determinan
@@ -221,7 +225,7 @@ En este ejemplo, el canal mostrado en panatalla depende unicamente del boton pre
 \section{Canalera secuencial}
 
 Tenemos un control de canalera, pero en lugar de tener un boton por cada canalera, tenemos dos botones, uno para arriba y otro para abajo.
-Tiene un "Contador" y lo que ocurre al presionar un boton es que este contador es modificado.
+Tiene un ``Contador`` y lo que ocurre al presionar un boton es que este contador es modificado.
 
 Los circuitos secuenciales incluyen una memoria y un estado.
 El estado es toda informacion del pasado necesaria para determinar el comportamiento futuro. \
@@ -543,14 +547,18 @@ Esto significa que tenemos 64 registros en nuestra memoria y las palabras miden 
 \newpage
 El posible set de instrucciones es:\\
 \[
-	\begin{array}{llll|l}
-		Operacion & Entrada1 & Entrada2 & Salida  & NumInstruccion \\ \hline
-		Add       & Op1      & Op2      & Res     & 00000000       \\
-		Sub       & Op1      & Op2      & Res     & 00000001       \\
-		And       & Op1      & Op2      & Res     & 00000010       \\
-		Or        & Op1      & Op2      & Res     & 00000011       \\
-		If        & X        & Op       & bit     & 00000100       \\
-		Goto      & X        & X        & Address & 00000101
+	\begin{array}{|llll|l|} \hline
+		Operacion & Entrada1               & Entrada2 & Salida  & NumInstruccion \\ \hline
+		Add       & Op1                    & Op2      & Res     & 00000000       \\ \hline
+		Sub       & Op1                    & Op2      & Res     & 00000001       \\ \hline
+		And       & Op1                    & Op2      & Res     & 00000010       \\ \hline
+		Or        & Op1                    & Op2      & Res     & 00000011       \\ \hline
+		If        & X                      & Op       & bit     & 00000100       \\
+		          & \begin{array}{ll}
+			            True  & Instruction \\
+			            False & Instruction \\
+		            \end{array} &          &         &                           \\ \hline
+		Goto      & X                      & X        & Address & 00000101       \\ \hline
 	\end{array}
 \] \\
 El \(Op1\), \(Op2\), etc se ven así: \\
@@ -565,10 +573,101 @@ El \(Op1\), \(Op2\), etc se ven así: \\
 	\overbrace{b_6}^{\mathclap{
 		\begin{array}{c}
 			0: \text{Memory o In/Out} \\
-			1: \text{Cte}
+			1: \text{Constante (Cte)}
 		\end{array}
 	}
 	}
 	\underbrace{b_5b_4b_3b_2b_1b_0}_{\mathclap{\text{Reg}}}
 \]
+
+Si el segundo bit (\(b_6\)) es 1, se determina si es In o Out por contexto. Si se esta colocaldo como un byte de entrada sera del In. Si esta en un byte de salida sera del Out.
+
+Sin embargo, si tenemos las siguientes instrucciones:\\
+
+\[
+	\begin{array}{llll}
+		Sub, & Inx24, & Cted17, & Memd64 \\
+		If,  & X,     & Memd64, & bit    \\
+	\end{array} \\
+\]
+
+Esto se traduce en binario a:\\
+
+\[
+	\begin{array}{llll}
+		00000001, & 01100100,          & 1\texttt{X}010001, & 00111111 \\
+		00000100, & \texttt{XXXXXXXX}, & 00111111,          & 00000111 \\
+	\end{array}
+\]
+
+Veamos como quedan las instrucciones en memoria:\\
+
+\[
+	\begin{array}{|c|l}
+		\vdots            &                           \\
+		00000100          & \rightarrow \mathbb{PC}+1 \\ \hline
+		00111111          &                           \\ \hline
+		1\texttt{X}010001 &                           \\ \hline
+		01100100          &                           \\ \hline
+		00000001          & \rightarrow \mathbb{PC}   \\ \hline
+	\end{array}
+\]
+
+\section{Clasificacion de microprocesadores}
+
+Hay dos clasificaciones:\\
+\begin{enumerate}
+	\item Organizacion de memoria
+	\item Instruction set
+\end{enumerate}
+\subsection{Segun la Organizacion de memoria}
+Recordemos primero que las operaciones que realiza el microprocesador:
+\begin{enumerate}
+	\item Instruction Fetch
+	\item Decode
+	\item Data reading
+	\item Data reading and execute
+	\item Data writing
+\end{enumerate}
+{\large Arquitectura Von Neumann} \\
+El microprocesador tiene una sola memoria que engloba tanto el Data Memory como el Program Memory. \\
+Las operaciones se realizaran de esta manera:
+\[
+	\begin{array}{l|l|l|l|l}
+		Instruction1 & 1,2 & 3,4 &     &     \\
+		Instruction2 &     &     & 1,2 & 3,4 \\
+	\end{array}
+\]
+Tenemos que hacer cada instruccion de manera secuencial. \\
+
+{\large Arquitectura de Harvard} \\
+La memoria del microprocesador tiene dos memorias separadas fisicamente, una para el Data Memory y otra para el Program Memory. \\
+Las operaciones se realizaran de esta manera:
+\[
+	\begin{array}{l|l|l|l|l}
+		Instruction1 & 1,2 & 3,4 &     & \\
+		Instruction2 &     & 1,2 & 3,4 & \\
+	\end{array}
+\]
+\newpage
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{p{0.5\linewidth}|p{0.5\linewidth}}
+		Von Neuman                                        & Harvard                                           \\ \hline
+		No permite pipeline                               & Permite pipeline                                  \\ \hline
+		1 solo Address Bus y 1 solo Data Bus              & 2 Adress Bus y 2 Data Bus                         \\ \hline
+		Existe problema de estructura en Program Memory   & No existe problema de escritura en Program Memory \\ \hline
+		Flexibilidad en cantidad de Program y Data Memory & No flexible                                       \\
+	\end{tabular}
+	\caption{Tabla comparativa}
+	\label{tab:clas_uP_org_mem}
+\end{table}
+
+\subsection{Segun el Instruction Set}
+{\large RISC}: Reduced Instruction Set Computer \\
+
+{\large CISC}: Complex Instruction Set Computer
+
+
 \end{document}
