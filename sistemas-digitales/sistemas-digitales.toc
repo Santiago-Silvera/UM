@@ -57,3 +57,4 @@
 \contentsline {section}{\numberline {7.4}Clasificacion de microprocesadores}{25}{section.7.4}%
 \contentsline {subsection}{\numberline {7.4.1}Segun la Organizacion de memoria}{25}{subsection.7.4.1}%
 \contentsline {subsection}{\numberline {7.4.2}Segun el Instruction Set}{26}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}MidRange Family}{27}{chapter.8}%

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1714389946.33223 "sistemas-digitales.tex" "sistemas-digitales.pdf" "sistemas-digitales" 1714389949.07656 0
+["pdflatex"] 1714480613.9374 "sistemas-digitales.tex" "sistemas-digitales.pdf" "sistemas-digitales" 1714480616.80738 0
   "../Assets/SumadorCompleto.png" 1713268091 15109 3062e146a82cb900c008dfe03e436ead ""
   "../Assets/arquitectura_general_uP.JPG" 1713872118 1991259 d30068355c2569904a8c117d87e0628c ""
   "../Assets/arquitectura_simplificada_uP.JPG" 1713871947 1667569 d3525108fa55539eccd040818e087eaf ""
@@ -17,7 +17,9 @@
   "../Assets/not_gate.png" 1713267782 2137 c81416a1e34bf3aef8642455a7cd8df5 ""
   "../Assets/peso_fl.png" 1712057192 51741 dad3c49b3096efdf6db2c468d0d9bd72 ""
   "../Assets/sumador_de_1bit.jpeg" 1710854504 132936 8bcab03172064c398b905cfdb8c4ce3f ""
+  "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1713203244 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1713213185 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1713203804 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1713197382 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1713197382 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1713197382 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -59,6 +61,7 @@
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1713197382 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1713197382 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1713197382 34694 870c211f62cb72718a00e353f14f254d ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1713203244 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1713216666 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1713197599 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "c:/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1713197747 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
@@ -195,10 +198,10 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1713221777 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1713221938 8222566 b41512c26afefa32e5b58087f78f30a5 ""
   "c:/texlive/2024/texmf.cnf" 1713221741 713 e69b156964470283e0530f5060668171 ""
-  "sistemas-digitales.aux" 1714389948 8104 2c332e26f388a7e0454dbf577077d4c8 "pdflatex"
-  "sistemas-digitales.out" 1714389948 8960 0ede170775f14f3c8579f32bd47ca3bc "pdflatex"
-  "sistemas-digitales.tex" 1714389945 24509 07d3e14789d93cce1f7bdac97e4374e3 ""
-  "sistemas-digitales.toc" 1714389948 4694 240720fbc6c0b9bec0106a7274adca2e "pdflatex"
+  "sistemas-digitales.aux" 1714480616 8293 fb908fad147540f3e45a8cd6bf01a6bf "pdflatex"
+  "sistemas-digitales.out" 1714480616 9082 021552c0adcdd95a6770eb27149be734 "pdflatex"
+  "sistemas-digitales.tex" 1714480613 24942 a1f39081bed87297a37b73f3f5dbd245 ""
+  "sistemas-digitales.toc" 1714480616 4766 4bf601dc5fbd7c65d71828c450591ce8 "pdflatex"
   (generated)
   "sistemas-digitales.aux"
   "sistemas-digitales.log"

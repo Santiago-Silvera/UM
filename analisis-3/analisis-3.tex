@@ -1,0 +1,380 @@
+\documentclass{report}
+\usepackage[spanish]{babel}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+
+\newcommand\defeq{\stackrel{\mathclap{\normalfont\mbox{def}}}{~=~}}
+\newcommand\reals{\mathds{R}}
+
+\newtcolorbox[auto counter,number within=chapter]{defbox}[2][]{
+colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,
+title=Definición~\thetcbcounter: #2,#1}
+
+\newtcolorbox[auto counter,number within=chapter]{propobox}[1][]{
+colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries,
+title=Proposición~\thetcbcounter, #1}
+
+\newtcolorbox[auto counter,number within=chapter]{teobox}[2][]{
+colback=cyan!5!white,colframe=cyan!75!black,fonttitle=\bfseries,
+title=Teorema~\thetcbcounter: #2,#1}
+
+
+\begin{document}
+
+\chapter{Integrales sobre curvas}
+\section{Integrales de campos escalares sobre curvas}
+\begin{defbox}{Parametrización}
+	Llamamremos $\textbf{parametrización}$ a toda función \(\alpha : I\subseteq\reals\rightarrow\reals^3\), donde \(I\) es un intervalo en \(\reals\).
+\end{defbox}
+
+\begin{defbox}{Curva suave}
+	Sea \(\mathcal{C}\) un conjunto no vacío de \(\reals^3\). \\
+	Diremos que \\
+	$\mathcal{C}$ es una \textbf{curva suave} $\iff$ \underline{existe} una parametrización $\alpha : I\subseteq\reals\rightarrow\reals^3$ de clase $C^1$ tal que $\mathcal{C}=\alpha (I)$
+\end{defbox}
+
+\begin{defbox}{Inmersión}
+	Consideremos una parametrización $\alpha : I \subseteq \reals \rightarrow \reals^3$. \\
+
+	Diremos que $\alpha$ es una \textbf{inmersión} \(\iff
+	\left\{ \begin{array}{l}
+		1. ~\alpha \text{ es de clase }C^1 \\
+		2. ~\alpha '(t) \ne 0 ~~~ \forall t \in I
+	\end{array}\right.\)
+\end{defbox}
+
+\begin{defbox}{Curva regular}
+	Sea \(\mathcal{C}\) un conjunto no vacío de \(\reals^3\). \\
+	Diremos que \\
+	$\mathcal{C}$ es una \textbf{curva regular} $\iff$ \underline{existe} una inmersión $\alpha : I\subseteq\reals\rightarrow\reals^3$ de clase $C^1$ tal que $\mathcal{C}=\alpha (I)$
+\end{defbox}
+
+\begin{defbox}{Curva simple}
+	Sea \(\mathcal{C}\) un conjunto no vacío de \(\reals^3\). \\
+	Diremos que \\
+	$\mathcal{C}$ es una \textbf{curva simple} $\iff$ \underline{existe} una inmersión $\alpha : I\subseteq\reals\rightarrow\reals^3$ de clase $C^1$ tal que $\mathcal{C}=\alpha (I)$ y además $\alpha$ es \underline{inyectiva en el interior de I}
+\end{defbox}
+
+\begin{defbox}{Curva cerrada}
+	Sea \(\mathcal{C}\) un conjunto no vacío de \(\reals^3\). \\
+	Diremos que \\
+	$\mathcal{C}$ es una \textbf{curva cerrada} $\iff$ \underline{existe} una inmersión $\alpha : [a,b] \subseteq\reals\rightarrow\reals^3$ de clase $C^1$ tal que $\mathcal{C}=\alpha (I)$ y se cunple que $\alpha (a) = \alpha (b)$
+\end{defbox}
+
+\begin{defbox}{Cambio de parámetros}
+	Consideramos una función $h: I \rightarrow \reals$, donde $I$ es un intervalo de $\reals$. \\
+	Diremos que \\
+	h es un \textbf{cambio de parámetros} $\iff
+		\left\{ \begin{array}{cc}
+			1)~ h\text{ es de clase } C^1 \\
+			2)~ h'(t) \ne 0 ~~~ \forall t \in I
+		\end{array}\right.
+	$
+\end{defbox}
+
+\begin{propobox}[label=propo:reparametrizacion]
+	Sea $\alpha : I \rightarrow \reals^3$ es una parametrización de clase $C^1$ de una curva $\mathcal{C} \subset \reals^3$ y $h: I \rightarrow \reals^3$ un cambio de parámetros, y sea $J=h(I)$. \\
+	Entonces \\
+	(1) la función
+	\[
+		\beta \defeq \alpha \circ h^{-1}:J\rightarrow \reals^n
+	\]
+	es una parametrización de clase $C^1$ de la curva $\mathcal{C}$, llamada \textbf{reparametrización} de $\alpha$ a través del cambio de parámetros $h$. \\
+	(2) Si $\alpha$ es inyectiva entonces $\beta$ también es inyectiva. \\
+	(3) Si $\alpha$ es una inmersión entonces $\beta$ también es una inmersión.
+\end{propobox}
+
+\begin{propobox}[label=propo:existencia_cambio_param]
+	Si $\alpha : I \rightarrow \reals^3$ y $\beta : J \rightarrow \reals^3$ son dos inmersiones inyectivas de una misma curva $\mathcal{C}\subseteq\reals^3$ entonces existe un cambio de parámetros $h: I \rightarrow \reals$ con $h(I)=J$ tal que $\beta = \alpha \circ h^{-1}$
+\end{propobox}
+
+\begin{defbox}{Integral de un campo escalar sobre una curva}
+	Sea $\mathcal{C}\subset\reals^3$ una curva regular simple y $f: U \subset \reals^3 \rightarrow \reals$ un campo escalar continuo en un abierto $U$ que contiene a $\mathcal{C}$. Si $\alpha : [a,b] \rightarrow \reals^3$ es una inmersión de la curva $\mathcal{C}$ definimos la integral del campo escalar $f$ sobre la curva $\mathcal{C}$ como:
+	\begin{equation}
+		\boxed{\int_{\mathcal{C}}{fds}\defeq \int_a^b{f(\alpha (t)) ~||\alpha '(t) ||dt}}
+		\label{eq:int_c_f}
+	\end{equation}
+\end{defbox}
+
+\begin{teobox}{Independencia respecto a la parametrización}
+	Sea $\mathcal{C} \subset \reals^3$ una curva regular simple y $f: U \subset \reals^3 \rightarrow \reals$ un campo escalar continuo en un abierto $U$ que contiene a $\mathcal{C}$. \\
+	Si $\alpha :[a,b] \rightarrow \reals^3$ y $\beta : [c,d] \rightarrow \reals^3$ son dos inmersiones inyectivas de la curva $\mathcal{C}$ entonces se cumple que: \\
+	\[
+		\int_a^b{f(\alpha (t))||\alpha '(t)||dt} = \int_c^d{f(\beta (s))||\beta '(s)||ds}
+	\]
+	\tcblower
+\end{teobox}
+\underline{Demostración} \\
+Por la proposición \ref{propo:reparametrizacion} y \ref{propo:existencia_cambio_param} sabemos que $\beta$ es una reparametrización de $\alpha$ a través de un cambio de parámetros $h: [a,b] \rightarrow [c,d]$ esto es: \\
+\[
+	\alpha = \beta \circ h
+\]
+Primer caso: Si $h'(t) > 0 ~~~ \forall t \in [a,b]$ la función $h: [a,b] \rightarrow [c,d]$ es creciente y se cumple que
+\[
+	\left\{ \begin{array}{l}
+		h(a) = c \\
+		h(b) = d
+	\end{array} \right.
+\]
+Luego \\
+\[
+	\begin{array}{ll}
+		\int_a^b{f(\alpha (t)) ||\alpha '(t)||dt} & = \int_a^b{f(\beta (h(t))) ||[\beta (h(t))]'||dt}    \\
+		                                          & = \int_a^b{f(\beta (h(t))) ||\beta '(h(t))h'(t)||dt} \\
+		                                          & = \int_a^b{f(\beta (h(t))) ||\beta '(h(t))||h'(t)dt} \\
+		                                          & = \int_{h(a)}^{h(b)}{f(\beta (s) ||\beta '(s)||ds}   \\
+		                                          & = \int_{c}^{d}{f(\beta (s) ||\beta '(s)||ds}         \\
+	\end{array}
+\]
+Segundo caso: Si $h'(t) < 0 ~~~ \forall t \in [a,b]$ la función $h: [a,b] \rightarrow [c,d]$ es decreciente y se cumple que
+\[
+	\left\{ \begin{array}{l}
+		h(a) = d \\
+		h(b) = c
+	\end{array} \right.
+\]
+Luego \\
+\[
+	\begin{array}{ll}
+		\int_a^b{f(\alpha (t)) ||\alpha '(t)||dt} & = \int_a^b{f(\beta (h(t))) ||[\beta (h(t))]'||dt}     \\
+		                                          & = \int_a^b{f(\beta (h(t))) ||\beta '(h(t))h'(t)||dt}  \\
+		                                          & = -\int_a^b{f(\beta (h(t))) ||\beta '(h(t))||h'(t)dt} \\
+		                                          & = -\int_{h(a)}^{h(b)}{f(\beta (s) ||\beta '(s)||ds}   \\
+		                                          & = -\int_{d}^{c}{f(\beta (s) ||\beta '(s)||ds}         \\
+		                                          & = \int_{c}^{d}{f(\beta (s) ||\beta '(s)||ds}          \\
+	\end{array}
+\]
+
+\section{Integrales de campos vectoriales sobre curvas}
+
+\begin{defbox}{Espacio de direcciones tangente}
+	Sea $\mathcal{C}$ una curva regular y simple en $\reals^3$ y $p\in \mathcal{C}$. \\
+	Si $\alpha : I \rightarrow \reals^3$ es una inmersión inyectiva de la curva $\mathcal{C}$ existe un único $t\in I$ tal que
+	\[
+		p = \alpha (t)
+	\]
+	Definimos el \textbf{espacio de direcciones tangentes} $\mathcal{C}$ en $p$, y lo indicamos por $T_p(\mathcal{C})$, al subespacio vectorial de $\reals^3$ generado por $\alpha (t)$, esto es
+	\[
+		T_p(\mathcal{C}) \defeq [\alpha '(t)]
+	\]
+	Y diremos que \\
+	$v \ne 0$ es una \textbf{dirección tangente} a $\mathcal{C}$ en $p \iff v \in T_p(\mathcal{C})$
+\end{defbox}
+
+\begin{defbox}{Orientación}
+	Sea $\mathcal{C}$ una curva regular y simple en $\reals^3$. \\
+	Un campo vectorial $\vec{T}: \mathcal{C} \rightarrow \reals^3$ es una \textbf{orientación} en $\mathcal{C} \iff$ cumple las siguientes propiedades:
+	\begin{enumerate}
+		\item $\vec{T}$ es continuo \\
+		\item $\vec{T}$ es un versor (esto es $||\vec{T}||=1$) \\
+		\item $\vec{T}(p)$ es una dirección tangente a $\mathcal{C}$ en $p$ (esto es $\vec{T}(p)\in T_p(\mathcal{C})$)
+	\end{enumerate}
+	Una \textbf{curva orientada} es una curva en la cual hemos elegido una orientación.
+\end{defbox}
+
+\begin{defbox}{Integral de un campo vectorial sobre una curva}
+	Sea $\mathcal{C} \subset \reals^3$ una curva regular simple orientada por el campo continuo $\vec{T}$ de versores tangentes. \\
+	Consideremos un campo vectorial $\vec{X}: U \subseteq \reals^3 \rightarrow \reals^3$ continuo en un abierto $U$ que contiene a $\mathcal{C}$. Definimos la integral del campo vectorial $\vec{X}$ a lo largo de la curva $\mathcal{C}$ como:
+	\[
+		\int_{\mathcal{C}}{\vec{X}ds} \defeq \int_{\mathcal{C}}{\vec{X}\cdot\vec{T}ds}
+	\]
+\end{defbox}
+
+% Formula de calculo
+\begin{propobox}
+	Sea $\mathcal{C} \subset \reals^3$ una curva regular simple orientada por el campo continuo $\vec{T}$ de versores tangentes y $\vec{X}:U\subseteq\reals^3 \rightarrow\reals^3$ un campo vectorial continuo en un abierto $U$ que contiene a $\mathcal{C}$. \\
+	Si $\alpha :[a,b] \rightarrow \reals^3$ es una inmersión de la curva $\mathcal{C}$ entonces
+	\begin{equation}
+		\boxed{
+		\int_{\mathcal{C}}{\vec{X}ds} = \pm \int_a^b{\vec{X}(\alpha (t))\cdot \alpha '(t)dt}
+		}
+		\label{eq:int_c_vec}
+	\end{equation}
+\end{propobox}
+\underline{Demostración} \\
+\[
+	\begin{array}{ll}
+		\int_{\mathcal{C}}{\vec{X}ds} & \defeq \int_{\mathcal{C}}{\vec{X}\cdot\vec{T}ds}                                                \\
+		                              & = \int_a^b{(\vec{X}(\alpha (t))\cdot \vec{T}(\alpha (t)))||\alpha '(t))||dt}                    \\
+		                              & =\pm \int_a^b{(\vec{X}(\alpha (t))\cdot \frac{\alpha '(t)}{||\alpha '(t)||})||\alpha '(t))||dt} \\
+		                              & = \pm \int_a^b{\vec{X}(\alpha (t))\cdot \alpha '(t)dt}
+	\end{array}
+\]
+
+\chapter{Integrales sobre superficies}
+\section{Integrales de campos escalares sobre superficies}
+\begin{defbox}{Parametrización}
+	Llamaremos \textbf{parametriación} a toad función $\varphi : D \subseteq \reals^2 \rightarrow \reals^3$, donde $D$ es un conjunto abierto y conexo en $\reals^2$.
+\end{defbox}
+
+\begin{defbox}{Superficie suave}
+	Sea $\mathcal{S}$ un conjunto no vacío de $\reals^3$. \\
+	Diremos que \\
+	$\mathcal{S}$ es una \textbf{superficie suave} $\iff$ \underline{existe} una parametrización \\ $\varphi : D \subseteq \reals^2 \rightarrow \reals^3$ de clase $C^1$ tal que $\mathcal{S}=\varphi (D)$ siendo $D$ un conjunto conexo de $\reals^2$.
+\end{defbox}
+
+\begin{defbox}{Inmersión}
+	Consideremos una parametrización $\varphi : D \subseteq \reals^2 \rightarrow \reals^3$. \\
+	Diremos que\\
+	$\varphi$ es una \textbf{inmersión}
+	$\iff \left\{\begin{array}{l}
+			1. ~\varphi \text{ es de clase } C^1 \\
+			2. ~\varphi_u(u,v)\times \varphi_v(u,v) \ne 0
+		\end{array}\right.$
+\end{defbox}
+
+\begin{defbox}{Superficie regular}
+	Sea $\mathcal{S}$ un conjunto no vacío de $\reals^3$. \\
+	Diremos que \\
+	$\mathcal{S}$ es una \textbf{superficie regular} $\iff$ \underline{existe} una inmersión \\ $\varphi : D \subseteq \reals^2 \rightarrow \reals^3$ tal que $\mathcal{S} = \varphi (D)$
+\end{defbox}
+
+\begin{defbox}{Superficie simple}
+	Sea $\mathcal{S}$ un conjunto no vacío de $\reals^3$. \\
+	Diremos que \\
+	$\mathcal{S}$ es una \textbf{superficie simple} $\iff$ \underline{existe} una parametrización \\ $\varphi : D \subseteq \reals^2 \rightarrow \reals^3$ de clase $C^1$ tal que $\mathcal{S}=\varphi (D)$ con $\varphi$ \textbf{inyectiva en $D$}.
+\end{defbox}
+
+\begin{defbox}{Integral de un campo escalar sobre una superficie}
+	Sea $\mathcal{S} \subset \reals^3$ una superficie regular y simple y $f : U \subset \reals^3 \rightarrow \reals$ un campo escalar continuo en un abierto $U$ que contiene a $\mathcal{S}$. Si $\varphi : D \subseteq \reals^2 \rightarrow \reals^3$ es una inmersión inyectiva que cuber a $\mathcal{S}$ definimos la integral del campo escalar $f$ sobre la superficie $\mathcal{S}$ como:
+	\begin{equation}
+		\boxed{
+			\iint_{\mathcal{S}}{fdS} \defeq \iint_{D}{f(\varphi (u, v))||\varphi_u (u,v) \times \varphi_v (u,v)||dudv}
+		}
+		\label{eq:int_s_f}
+	\end{equation}
+\end{defbox}
+
+% Lema de algebra v_1 x v_2 = det(a) (w_1 x w_2)
+\begin{propobox}[label=propo:lema_alg_lin]
+	Sean $v_1, v_2, w_1, w_2$ vectores en $\reals^3$ y $A$ una matriz real $2\times 2$ y las matrices $V$ y $W$ siendo conformadas por los vectores $v_1, v_2$ y $w_1, w_2$ puestos como columnas respectivamente, tales que \\
+	\[
+		V = WA
+	\]
+	entonces
+	\[
+		v_1 \times v_2 = det(A) (w_1 \times w_2)
+	\]
+\end{propobox}
+
+% unas cosas necias con vectoriales de las derivadas del phi
+\begin{propobox}
+	Si $\varphi$ es una reparametrización de $\psi$ a través del cambio de parámetros $h$ entonces
+	\[
+		\varphi_u (u,v) \times \varphi_v (u,v) = det(\mathds{J}h(u,v)) (\psi_s (s,t) \times \psi_t (s,t))
+	\]
+	donde $(s,t) = h(u,v)$.
+\end{propobox}
+\underline{Demostración} \\
+Tenemos que \\
+\[
+	\varphi = \psi \circ h
+\]
+y por la regla de la cadena
+\[
+	\mathds{J}\varphi (u,v) = \mathds{J}\psi (h (u,v) ) \cdot \mathds{J}h(u,v)
+\]
+\[
+	\iff \mathds{J}\varphi (u,v) = \mathds{J}\psi (s,t) \cdot \mathds{J}h(u,v)
+\]
+Aplicando la proposición \ref{propo:lema_alg_lin} conluimos \\
+\[
+	\varphi_u (u,v) \times \varphi_v (u,v) = det(\mathds{J}h(u,v)) (\psi_s (s,t) \times \psi_t (s,t))
+\]
+
+\begin{teobox}{Independencia respecto a la parametrización}
+	Sea $\mathcal{S} \subset \reals^3$ una superficie regular simple y $f: U \subseteq \reals^3 \rightarrow \reals$ un campo escalar continuo en un abierto $U$ que contiene a $\mathcal{S}$. \\
+	Si $\varphi : D \subset \reals^2 \rightarrow \reals^3$ y $\psi : E \subset \reals^2 \rightarrow \reals^3$ son dos inmersiones inyectivas de la superficie $\mathcal{S}$ entonces se cumple \\
+	\[
+		\iint_D{f(\varphi (u,v) ) ||\varphi_u (u,v) \times \varphi_v (u,v)||~dudv}
+	\]
+	\[ = \]
+	\[
+		\iint_E{f(\psi (s,t) ) ||\psi_s (s,t) \times \psi_t (s,t)||~dsdt}
+	\]
+\end{teobox}
+\underline{Demostración} \\
+Tenemos que $\psi$ es una reparametrización de $\varphi$ a través de un cambio de parámetros $h: D \rightarrow E$, esto es:
+\[
+	\psi = \varphi \circ h
+\]
+Aplicando el cambio de variables (en integral doble)
+\[
+	\left\{\begin{array}{l}
+		(s,t) = h(u,v) \\
+		dsdt = |det(\mathds{J}h(u,v))|dudv
+	\end{array}\right.
+\]
+se tiene que \\
+\[
+	\iint_E{f(\psi (s,t) ) ||\psi_s (s,t) \times \psi_t (s,t)|| dsdt} =
+	\iint_E{f(\psi (h(u,v)) ||\psi_s h((u,v)) \times \psi_t (h(u,v))|||det(\mathds{J}h(u,v))| dudv}
+\]
+pero como $\varphi = \psi \circ h$
+\[
+	f(\psi (h (u,v) ) ) = f(\varphi (u,v) )
+\]
+y utilizando la proposición \ref{propo:lema_alg_lin} se deduce que
+\[
+	||\psi_s (h(u,v)) \times \psi_t (h(u,v))|| = ||\varphi_u (u,v) \times \varphi_v (u,v)||
+\]
+sustituyendo obtenemos
+\[
+	\iint_D{f(\varphi (u,v) ) ||\varphi_u (u,v) \times \varphi_v (u,v)||~dudv} =
+	\iint_E{f(\psi (s,t) ) ||\psi_s (s,t) \times \psi_t (s,t)||~dsdt}
+\]
+\section{Integrales de campos vectoriales sobre superficies}
+
+\begin{defbox}{Espacio de direcciones normales}
+\end{defbox}
+
+\begin{defbox}{Orientación}
+\end{defbox}
+
+\begin{defbox}{Integral de un campo vectorial sobre una superficie}
+\end{defbox}
+
+% Formula de calculo usando parametrizaciones
+\begin{propobox}
+\end{propobox}
+
+\chapter{Teoremas clásicos del cálulo vectorial}
+
+% semejante apampanado el que se puso a demostrar esto
+\begin{teobox}{de la curva de Jordan}
+
+	% ni va a ir la demostracion de esta cosa
+\end{teobox}
+
+
+\begin{teobox}{Green}
+
+	\tcblower
+	\underline{Demostración} \\
+\end{teobox}
+
+% mi gran y querido
+\begin{defbox}{Operador de Hamilton}
+\end{defbox}
+
+\begin{defbox}{Rotor}
+\end{defbox}
+
+\begin{teobox}{Stokes}
+
+	\tcblower
+	\underline{Demostración} \\
+\end{teobox}
+
+\begin{defbox}{Divergencia}
+\end{defbox}
+
+\begin{teobox}{Gauss}
+
+	\tcblower
+	\underline{Demostración} \\
+\end{teobox}
+
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.15)  29 APR 2024 08:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.15)  30 APR 2024 09:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -608,7 +608,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [6] [7]
 Cap\'{\i }tulo 3.
-<../Assets/not_gate.png, id=354, 228.855pt x 118.94438pt>
+<../Assets/not_gate.png, id=359, 228.855pt x 118.94438pt>
 File: ../Assets/not_gate.png Graphic file (type png)
 <use ../Assets/not_gate.png>
 Package pdftex.def Info: ../Assets/not_gate.png  used on input line 148.
@@ -617,12 +617,12 @@ Package pdftex.def Info: ../Assets/not_gate.png  used on input line 148.
 
  <../Assets/not_gate.png>] [9]
 Cap\'{\i }tulo 4.
-<../Assets/SumadorCompleto.png, id=363, 691.58376pt x 414.54875pt>
+<../Assets/SumadorCompleto.png, id=368, 691.58376pt x 414.54875pt>
 File: ../Assets/SumadorCompleto.png Graphic file (type png)
 <use ../Assets/SumadorCompleto.png>
 Package pdftex.def Info: ../Assets/SumadorCompleto.png  used on input line 208.
 (pdftex.def)             Requested size: 227.62204pt x 136.44095pt.
-<../Assets/multiplexor.jpg, id=365, 1284.8pt x 722.7pt>
+<../Assets/multiplexor.jpg, id=370, 1284.8pt x 722.7pt>
 File: ../Assets/multiplexor.jpg Graphic file (type jpg)
 <use ../Assets/multiplexor.jpg>
 Package pdftex.def Info: ../Assets/multiplexor.jpg  used on input line 215.
@@ -630,19 +630,19 @@ Package pdftex.def Info: ../Assets/multiplexor.jpg  used on input line 215.
 [10
 
  <../Assets/SumadorCompleto.png>]
-<../Assets/canalera_combinatoria_19-03-24.png, id=371, 493.845pt x 314.67563pt>
+<../Assets/canalera_combinatoria_19-03-24.png, id=376, 493.845pt x 314.67563pt>
 File: ../Assets/canalera_combinatoria_19-03-24.png Graphic file (type png)
 <use ../Assets/canalera_combinatoria_19-03-24.png>
 Package pdftex.def Info: ../Assets/canalera_combinatoria_19-03-24.png  used on input line 221.
 (pdftex.def)             Requested size: 284.52756pt x 181.2972pt.
  [11 <../Assets/multiplexor.jpg> <../Assets/canalera_combinatoria_19-03-24.png>]
-<../Assets/circuitos_combinatorios2.png, id=377, 644.4075pt x 304.13625pt>
+<../Assets/circuitos_combinatorios2.png, id=382, 644.4075pt x 304.13625pt>
 File: ../Assets/circuitos_combinatorios2.png Graphic file (type png)
 <use ../Assets/circuitos_combinatorios2.png>
 Package pdftex.def Info: ../Assets/circuitos_combinatorios2.png  used on input line 241.
 (pdftex.def)             Requested size: 284.52756pt x 134.28906pt.
  [12 <../Assets/circuitos_combinatorios2.png>]
-<../Assets/sumador_de_1bit.jpeg, id=383, 960.58875pt x 606.01407pt>
+<../Assets/sumador_de_1bit.jpeg, id=388, 960.58875pt x 606.01407pt>
 File: ../Assets/sumador_de_1bit.jpeg Graphic file (type jpg)
 <use ../Assets/sumador_de_1bit.jpeg>
 Package pdftex.def Info: ../Assets/sumador_de_1bit.jpeg  used on input line 308.
@@ -653,12 +653,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--367
  []
 
 [15]
-<../Assets/mapas_de_karnaugh.png, id=397, 752.8125pt x 564.60938pt>
+<../Assets/mapas_de_karnaugh.png, id=402, 752.8125pt x 564.60938pt>
 File: ../Assets/mapas_de_karnaugh.png Graphic file (type png)
 <use ../Assets/mapas_de_karnaugh.png>
 Package pdftex.def Info: ../Assets/mapas_de_karnaugh.png  used on input line 420.
 (pdftex.def)             Requested size: 284.52756pt x 213.39934pt.
-<../Assets/peso_fl.png, id=398, 752.8125pt x 564.60938pt>
+<../Assets/peso_fl.png, id=403, 752.8125pt x 564.60938pt>
 File: ../Assets/peso_fl.png Graphic file (type png)
 <use ../Assets/peso_fl.png>
 Package pdftex.def Info: ../Assets/peso_fl.png  used on input line 424.
@@ -669,12 +669,12 @@ Cap\'{\i }tulo 5.
 
 ]
 Cap\'{\i }tulo 6.
-<../Assets/bistable.png, id=415, 576.35326pt x 352.9185pt>
+<../Assets/bistable.png, id=420, 576.35326pt x 352.9185pt>
 File: ../Assets/bistable.png Graphic file (type png)
 <use ../Assets/bistable.png>
 Package pdftex.def Info: ../Assets/bistable.png  used on input line 454.
 (pdftex.def)             Requested size: 170.71652pt x 104.53548pt.
-<../Assets/latch-sr.png, id=416, 432.4155pt x 193.32225pt>
+<../Assets/latch-sr.png, id=421, 432.4155pt x 193.32225pt>
 File: ../Assets/latch-sr.png Graphic file (type png)
 <use ../Assets/latch-sr.png>
 Package pdftex.def Info: ../Assets/latch-sr.png  used on input line 462.
@@ -698,17 +698,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [19
 
  <../Assets/bistable.png> <../Assets/latch-sr.png>]
-<../Assets/latch-sl-rl.png, id=424, 504.6855pt x 249.93375pt>
+<../Assets/latch-sl-rl.png, id=429, 504.6855pt x 249.93375pt>
 File: ../Assets/latch-sl-rl.png Graphic file (type png)
 <use ../Assets/latch-sl-rl.png>
 Package pdftex.def Info: ../Assets/latch-sl-rl.png  used on input line 480.
 (pdftex.def)             Requested size: 170.71652pt x 84.5454pt.
-<../Assets/latch-sr-con-enable.png, id=425, 387.24675pt x 147.55125pt>
+<../Assets/latch-sr-con-enable.png, id=430, 387.24675pt x 147.55125pt>
 File: ../Assets/latch-sr-con-enable.png Graphic file (type png)
 <use ../Assets/latch-sr-con-enable.png>
 Package pdftex.def Info: ../Assets/latch-sr-con-enable.png  used on input line 483.
 (pdftex.def)             Requested size: 170.71652pt x 65.04881pt.
-<../Assets/latch-d.png, id=426, 717.27975pt x 268.6035pt>
+<../Assets/latch-d.png, id=431, 717.27975pt x 268.6035pt>
 File: ../Assets/latch-d.png Graphic file (type png)
 <use ../Assets/latch-d.png>
 Package pdftex.def Info: ../Assets/latch-d.png  used on input line 491.
@@ -718,20 +718,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
-<../Assets/latch-d-rep.png, id=427, 204.765pt x 157.7895pt>
+<../Assets/latch-d-rep.png, id=432, 204.765pt x 157.7895pt>
 File: ../Assets/latch-d-rep.png Graphic file (type png)
 <use ../Assets/latch-d-rep.png>
 Package pdftex.def Info: ../Assets/latch-d-rep.png  used on input line 501.
 (pdftex.def)             Requested size: 56.9055pt x 43.8509pt.
 [20 <../Assets/latch-sl-rl.png> <../Assets/latch-sr-con-enable.png> <../Assets/latch-d.png>]
-<../Assets/d-flipflop.png, id=437, 798.5835pt x 319.1925pt>
+<../Assets/d-flipflop.png, id=442, 798.5835pt x 319.1925pt>
 File: ../Assets/d-flipflop.png Graphic file (type png)
 <use ../Assets/d-flipflop.png>
 Package pdftex.def Info: ../Assets/d-flipflop.png  used on input line 505.
 (pdftex.def)             Requested size: 170.71652pt x 68.23053pt.
  [21 <../Assets/latch-d-rep.png> <../Assets/d-flipflop.png>]
 Cap\'{\i }tulo 7.
-<../Assets/arquitectura_general_uP.JPG, id=444, 3276.24pt x 2457.18pt>
+<../Assets/arquitectura_general_uP.JPG, id=449, 3276.24pt x 2457.18pt>
 File: ../Assets/arquitectura_general_uP.JPG Graphic file (type jpg)
 <use ../Assets/arquitectura_general_uP.JPG>
 Package pdftex.def Info: ../Assets/arquitectura_general_uP.JPG  used on input line 517.
@@ -748,7 +748,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
-<../Assets/arquitectura_simplificada_uP.jpg, id=449, 3276.24pt x 2457.18pt>
+<../Assets/arquitectura_simplificada_uP.jpg, id=454, 3276.24pt x 2457.18pt>
 File: ../Assets/arquitectura_simplificada_uP.jpg Graphic file (type jpg)
 <use ../Assets/arquitectura_simplificada_uP.jpg>
 Package pdftex.def Info: ../Assets/arquitectura_simplificada_uP.jpg  used on input line 525.
@@ -803,7 +803,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 668--669
 
  []
 
-[26] (./sistemas-digitales.aux
+[26]
+Cap\'{\i }tulo 8.
+[27
+
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./sistemas-digitales.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -812,21 +816,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `sistemas-digitales.out' has not changed.
-(rerunfilecheck)             Checksum: 0EDE170775F14F3C8579F32BD47CA3BC;8960.
+(rerunfilecheck)             Checksum: 021552C0ADCDD95A6770EB27149BE734;9082.
  ) 
 Here is how much of TeX's memory you used:
- 23990 strings out of 474104
- 455826 string characters out of 5747502
+ 23997 strings out of 474104
+ 455905 string characters out of 5747502
  1947496 words of memory out of 5000000
- 45874 multiletter control sequences out of 15000+600000
- 568596 words of font info for 78 fonts, out of 8000000 for 9000
+ 45877 multiletter control sequences out of 15000+600000
+ 568931 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,470b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sistemas-digitales.pdf (26 pages, 4501629 bytes).
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on sistemas-digitales.pdf (27 pages, 4509960 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 489 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 562 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 501 compressed objects within 6 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 570 words of extra memory for PDF output out of 10000 (max. 10000000)
 
