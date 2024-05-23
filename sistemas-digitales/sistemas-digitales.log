@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.15)  30 APR 2024 09:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.15)  7 MAY 2024 09:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -807,7 +807,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 668--669
 Cap\'{\i }tulo 8.
 [27
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./sistemas-digitales.aux
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
+<../Assets/Temp_Control_Problema.jpg, id=494, 2469.225pt x 1395.2125pt>
+File: ../Assets/Temp_Control_Problema.jpg Graphic file (type jpg)
+<use ../Assets/Temp_Control_Problema.jpg>
+Package pdftex.def Info: ../Assets/Temp_Control_Problema.jpg  used on input line 693.
+(pdftex.def)             Requested size: 227.62204pt x 128.60806pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--699
+
+ []
+
+<../Assets/Temp_Control_Diagrama_Flujo.jpg, id=495, 3297.31876pt x 1601.985pt>
+File: ../Assets/Temp_Control_Diagrama_Flujo.jpg Graphic file (type jpg)
+<use ../Assets/Temp_Control_Diagrama_Flujo.jpg>
+Package pdftex.def Info: ../Assets/Temp_Control_Diagrama_Flujo.jpg  used on input line 701.
+(pdftex.def)             Requested size: 284.52756pt x 138.23247pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 700--703
+
+ []
+
+[28 <../Assets/Temp_Control_Problema.jpg> <../Assets/Temp_Control_Diagrama_Flujo.jpg>] (./sistemas-digitales.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -819,18 +844,18 @@ Package rerunfilecheck Info: File `sistemas-digitales.out' has not changed.
 (rerunfilecheck)             Checksum: 021552C0ADCDD95A6770EB27149BE734;9082.
  ) 
 Here is how much of TeX's memory you used:
- 23997 strings out of 474104
- 455905 string characters out of 5747502
+ 24013 strings out of 474104
+ 456558 string characters out of 5747502
  1947496 words of memory out of 5000000
- 45877 multiletter control sequences out of 15000+600000
+ 45892 multiletter control sequences out of 15000+600000
  568931 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,470b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on sistemas-digitales.pdf (27 pages, 4509960 bytes).
+Output written on sistemas-digitales.pdf (28 pages, 5355898 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
- 113 named destinations out of 1000 (max. 500000)
- 570 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 580 words of extra memory for PDF output out of 10000 (max. 10000000)
 

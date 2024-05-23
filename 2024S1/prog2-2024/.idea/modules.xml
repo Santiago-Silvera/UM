@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Parcial2024g2/Parcial2024g2.iml" filepath="$PROJECT_DIR$/Parcial2024g2/Parcial2024g2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practico1/Practico1.iml" filepath="$PROJECT_DIR$/Practico1/Practico1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegundoParcial2018/SegundoParcial2018.iml" filepath="$PROJECT_DIR$/SegundoParcial2018/SegundoParcial2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TADS/TADS.iml" filepath="$PROJECT_DIR$/TADS/TADS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro/pro.iml" filepath="$PROJECT_DIR$/pro/pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/prog2-2024.iml" filepath="$PROJECT_DIR$/.idea/prog2-2024.iml" />
+    </modules>
+  </component>
+</project>

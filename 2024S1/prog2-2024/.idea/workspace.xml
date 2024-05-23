@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce990ab7-9cbc-412f-b2c7-c795839feebf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Parcial2024g2/Parcial2024g2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practico1/Practico1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SegundoParcial2018/SegundoParcial2018.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TADS/TADS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/pro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../analisis-3/analisis-3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../analisis-3/analisis-3.tex" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2g5rHFYOFKamPQqx4Z5o6VPM3XE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/santi/OneDrive/Desktop/UM/2024S1/prog2-2024"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce990ab7-9cbc-412f-b2c7-c795839feebf" name="Changes" comment="" />
+      <created>1714998190038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714998190038</updated>
+    </task>
+    <servers />
+  </component>
+</project>

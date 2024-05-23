@@ -1,6 +1,6 @@
 \documentclass{report}
 \usepackage[spanish]{babel}
-\usepackage{mathtools}
+\usepackage{amsmath,amsthm,mathtools}
 \usepackage{dsfont}
 \usepackage{amssymb}
 \usepackage{tcolorbox}
@@ -328,53 +328,560 @@ sustituyendo obtenemos
 \section{Integrales de campos vectoriales sobre superficies}
 
 \begin{defbox}{Espacio de direcciones normales}
+	Sea $\mathcal{S}$ una superficie regular simple y orientable en $\reals^3$ y $p \in \mathcal{S}$.\\
+	Si $\varphi : D \rightarrow \reals^3$ es una inmersión inyectiva de la superficie $\mathcal{S}$ existe un único $(u,v)\in D$ tal que
+	\[
+		p=\varphi (u,v)
+	\]
+	Definimos el \textbf{espacio de direcciones normales} $\mathcal{S}$ en $p$, y llo indicamos por $[T_p(\mathcal{S})]^\bot$, al subespacio vectorial de $\reals^3$ generado por $\varphi_u (u,v) \times \varphi_v (u,v)$, eso es
+	\[
+		[T_p(\mathcal{S})]^\bot \defeq gen(\varphi_u (u,v) \times \varphi_v (u,v))
+	\]
+	Y diremos que \\
+	$\vec{n} \ne 0$ es una \textbf{dirección normal} a $\mathcal{S}$ en $p \iff \vec{n} \in [T_p(\mathcal{S})]^\bot$
 \end{defbox}
 
 \begin{defbox}{Orientación}
+	Sea $\mathcal{S}$ una superficie regular simple y orientable en $\reals^3$ y $p \in \mathcal{S}$.\\
+	Un campo vectorial $\vec{n} : \mathcal{C} \rightarrow \reals^3$ es una \textbf{orientación} en $\mathcal{S} \iff$ cumple las siguientes propiedades:
+	\begin{enumerate}
+		\item $\vec{n}$ es continuo
+		\item $\vec{n}$ es un versor (esto es $||\vec{n}|| = 1$
+		\item $\vec{n} (p)$ es un vector normal a $\mathcal{C}$ en $p$ (esto es $\vec{n}(p)\in [T_p(\mathcal{S})]^\bot$
+	\end{enumerate}
 \end{defbox}
 
 \begin{defbox}{Integral de un campo vectorial sobre una superficie}
+	Sea $\mathcal{S} \subset \reals^3$ una superficie regular simple orientada por el campo continuo $\vec{n}$ de versores normales.
+	consideremos un campo vectorial $\vec{X} : U \subseteq \reals^3 \rightarrow \reals^3$ continuo en un abierto $U$ que contiene a $\mathcal{S}$.
+	Definimos la integral del campo vectorial $\vec{X}$ sobre la superficie $\mathcal{S}$ como:
+	\begin{equation}
+		\boxed{
+			\iint_{\mathcal{S}}{\vec{X}dS} \defeq \iint_{\mathcal{S}}{\vec{X}\cdot \vec{n}dS}
+		}
+		\label{eq:int_s_vec}
+	\end{equation}
 \end{defbox}
 
 % Formula de calculo usando parametrizaciones
 \begin{propobox}
+	Sea $\mathcal{S} \subset \reals^3$ una superficie regular orientada por el campo continuo $\vec{n}$ de versores normales a $\mathcal{S}$ y $\vec{X} : U \subseteq \reals^3 \rightarrow \reals^3$ un campo vectorial continuo en un abierto $U$ que contiene a $\mathcal{S}$.
+	Si $\varphi : D \subset \reals^2 \rightarrow \reals^3$ es una inmersión inyectiva de la $\mathcal{S}$ entonces
+	\begin{equation}
+		\boxed{
+		\iint_{\mathcal{S}}{\vec{X}dS} =
+		\pm \iint_D{\vec{X}(\varphi (u,v)) \cdot (\varphi_u (u,v) \times \varphi_v (u,v)) dudv}
+		}
+		\label{eq:form_int_s_vec}
+	\end{equation}
+	donde el signo $\pm$ depende de si la superfice es compatible o no con la orientación de $\mathcal{S}$.
 \end{propobox}
+\underline{Demostración} \\
+\[
+	\begin{array}{ll}
+		\iint_\mathcal{S}{\vec{X}dS} & \defeq \iint_{\mathcal{S}}{\vec{X}\cdot\vec{n}dS}                                                                                                                                     \\
+		                             & ~=~ \iint_D{\vec{X}(\varphi (u,v))\cdot \vec{n}(\varphi (u,v)) ~||\varphi_u (u,v) \times \varphi_v (u,v)||dudv}                                                                       \\
+		                             & ~= \pm \iint_D{\vec{X}(\varphi (u,v))\cdot \frac{\varphi_u (u,v) \times \varphi_v (u,v)}{||\varphi_u (u,v) \times \varphi_v (u,v)||} ~||\varphi_u (u,v) \times \varphi_v (u,v)||dudv} \\
+		                             & ~= \pm \iint_D{\vec{X}(\varphi (u,v)) \cdot (\varphi_u (u,v) \times \varphi_v (u,v)) dudv}
+	\end{array}
+\]
 
 \chapter{Teoremas clásicos del cálulo vectorial}
 
 % semejante apampanado el que se puso a demostrar esto
 \begin{teobox}{de la curva de Jordan}
-
-	% ni va a ir la demostracion de esta cosa
+	Toda curva cerrada y simple $\mathcal{C}$ en $\reals^2$ divide al propio $\reals^2$ en dos conjuntos abiertos conexos y disjuntos $A_1$ y $A_2$ cuya frontera común es la curva $\mathcal{C}$. \\
+	Además uno de ellos es acotada (se denomina ``interior`` de $\mathcal{C}$) y el otroes no acotada (se denomina ``exterior`` de $\mathcal{C}$).
 \end{teobox}
 
 
 \begin{teobox}{Green}
-
-	\tcblower
-	\underline{Demostración} \\
+	Sea $\mathcal{C}$ una curva cerrada simple orientada en \underline{\textbf{sentido antihorario}} y sea $D$ la unión de la curva $\mathcal{C}$ con la región conexa ``interior`` a $\mathcal{C}$. \\
+	Si el campo $\vec{X} = (P,Q)$ es de clase $C^1$ en un abierto que contiene a $D$ se cumple que
+	\begin{equation}
+		\boxed{
+			\int_{\mathcal{C}^+}{\vec{X}ds} = \iint_D{(Q_x - P_y)dxdy}
+		}
+		\label{eq:teo_green}
+	\end{equation}
 \end{teobox}
+\begin{proof} para regiones elementales \\
+Si consideramos los campos $\vec{P} \defeq (P,0)$ y $\vec{Q} \defeq (0,Q)$ se tiene que
+\[
+	\vec{X} = (P,Q) = (P,0) + (0,Q) = \vec{P} + \vec{Q}
+\]
+y por la propiedad de linealidad de las integrales sobre curvas se cumple que
+\[
+	\int_{\mathcal{C}^+}{\vec{X}ds} = \int_{\mathcal{C}^+}{\vec{P}ds} + \int_{\mathcal{C}^+}{\vec{Q}ds}
+\]
+Por otro lado, por la propiedad de linealidad de las integrales dobles, también se tiene que
+\[
+	\iint_D{(Q_x - P_y)dxdy} = \iint_D{Q_xdxdy} - \iint_D{P_ydxdy}
+\]
+Por lo tanto bastará con probar que
+\[
+	\int_{\mathcal{C}^+}{\vec{P}ds} = - \iint_D{P_ydxdy}
+\]
+\[
+	\int_{\mathcal{C}^+}{\vec{Q}ds} = \iint_D{Q_xdxdy}
+\]
+
+\underline{Primera parte} \\
+Como $D$ es elemental lo podemos exresar de la siguiente manera:
+\[
+	D= \left\{ (x,y)\in \reals^2 : a \le x \le b, f_1(x) \le y \le f_2(x)\right\}
+\]
+donde $f_1$ y $f_2$ son funciones de clase $C^1$ en el intervalo $[a,b]$.
+Evaluamos la integral doble en $D$
+\[
+	-\iint_D{P_y(x,y)dxdy} =
+	-\int_a^b{\left[\int_{f_1(x)}^{f_2(x)}{P_y(x,y)dy} \right]dx} =
+	-\int_a^b{\left[ \left.{P(x,y)}\right|_{f_1(x)}^{f_2(x)} \right]dx} =
+\]
+\[
+	= -\int_a^b{\left[ P(x,f_2(x))-P(x,f_1(x))\right]dx}
+	= \boxed{
+	\int_a^b{\left[ P(x,f_1(x))-P(x,f_2(x))\right]dx}
+	}
+\]
+Por otro lado la curva $\mathcal{C}$ se puede descomponer en dos curvas $\mathcal{C} = \mathcal{C}_2 \cup \mathcal{C}_2$ y se cumple que
+\[
+	\int_{\mathcal{C}}{\vec{P}ds} =
+	\int_{\mathcal{C}_1}{\vec{P}ds} +
+	\int_{\mathcal{C}_2}{\vec{P}ds}
+\]
+Siendo la curva $\mathcal{C}_1$ el gráfico de la función $f_1$ la podemos parametrizar por
+\[
+	\alpha_1 : \alpha_1(x) = (x,f_1(x))
+\]
+con $x\in [a,b]$ que es compatible con la orientación de $\mathcal{C}_1$. \\
+De esta manera
+\[
+	\int_{\mathcal{C}_1}{\vec{P}ds} =
+	\int_a^b{\vec{P}(\alpha_1(x))\cdot \alpha_1'(x)dx} =
+	\int_a^b{(P(\alpha_1(x),0)\cdot (1,f_1'(x))dx} =
+	\int_a^b{(P(x,f_1(x)))dx}
+\]
+De forma análoga,
+siendo la curva $\mathcal{C}_2$ el gráfico de la función $f_2$ la podemos parametrizar por
+\[
+	\alpha_2 : \alpha_2(x) = (x,f_2(x))
+\]
+con $x\in [a,b]$ que \underline{no} es compatible con la orientación de $\mathcal{C}_2$. \\
+Así
+\[
+	\int_{\mathcal{C}_2}{\vec{P}ds} =
+	-\int_a^b{(P(x,f_2(x)))dx}
+\]
+Entonces
+\[
+	\int_{\mathcal{C}}{\vec{P}ds} =
+	\int_{\mathcal{C}_1}{\vec{P}ds} +
+	\int_{\mathcal{C}_2}{\vec{P}ds} =
+	\int_a^b{(P(x,f_1(x)))dx}
+	-\int_a^b{(P(x,f_2(x)))dx}
+\]
+\[
+	=
+	\boxed{
+	\int_a^b{\left[P(x,f_1(x))-P(x,f_2(x))\right]dx}
+	}
+\]
+Podemos concluir que
+\[
+	\int_{\mathcal{C}^+}{\vec{P}ds} = - \iint_D{P_ydxdy}
+\]
+El segundo caso es análogo.
+\end{proof}
+
 
 % mi gran y querido
 \begin{defbox}{Operador de Hamilton}
+	El \textbf{operador de Hamilton $\nabla$ ``nabla``} \\
+	\[
+		\nabla \defeq \left(\frac{\partial}{\partial{x}},\frac{\partial}{\partial{y}},\frac{\partial}{\partial{z}}\right)
+	\]
+	es un operador que resulta util para expresar las nociones que veremos más adelante.
 \end{defbox}
 
 \begin{defbox}{Rotor}
+	Sea $\vec{X} : U \subseteq \reals^3 \rightarrow \reals^3$ un campo vectorial de calse $C^1$ en un abierto $U$ de $\reals^3$. \\
+	Se define el \textbf{rotor} del campo $\vec{X} = (P,Q,R)$ como el campo vectorial $Rot(\vec{X}) : U \subseteq \reals^3 \rightarrow \reals^3$ tal que
+	\begin{equation}
+		Rot(\vec{X}) \defeq \left(
+		\frac{\partial{R}}{\partial{y}}-\frac{\partial{Q}}{\partial{z}},
+		\frac{\partial{P}}{\partial{z}}-\frac{\partial{R}}{\partial{x}},
+		\frac{\partial{Q}}{\partial{x}}-\frac{\partial{P}}{\partial{y}}
+		\right)
+		\label{eq:rotor}
+	\end{equation}
+	\underline{Observación} \\
+	\[
+		Rot(\vec{X}) = \nabla \times \vec{X}
+	\]
 \end{defbox}
 
 \begin{teobox}{Stokes}
-
-	\tcblower
-	\underline{Demostración} \\
+	Sea $\mathcal{S}$ una superficie con borde $\partial{\mathcal{S}}$ la cual está orientada con el campo de versores normales $\vec{n}$. Si un campo $\vec{X}= (P,Q,R)$ es de clase $C^1$ en un abierto que contiene a la superficie $\mathcal{S}$ entonces se cumple que
+	\begin{equation}
+		\iint_{\mathcal{S}}{Rot(\vec{X})dS} =
+		\int_{\partial{\mathcal{S}}}{\vec{X}ds}
+		\label{eq:teo_stokes}
+	\end{equation}
+	donde la curva borde $\partial{\mathcal{S}}$ está orientada con la orientación inducida por $\vec{n}$.
 \end{teobox}
+\begin{proof}
+	Vamos a realizar la demostración para el caso en el que la superficie es el grafico de una función. \\
+	Supongamos que:
+	\[
+		\mathcal{S} = \left\{ (x,y,z)\in \reals^3 : z = f(x,y), (x,y) \in D\right\}
+	\]
+	donde $f: U \subseteq \reals^2 \rightarrow \reals$ es de clase $C^2$ y $D$ es un abierto contenido en $U$ tal que su frontera es una curva $\mathcal{C}$ también contenida en $U$.
+
+	Sin pérdida de generalidad orientamos la superficie con la normal $\vec{n}$ exterior (tercera componente positiva). \\
+	$\vec{n}$ induce una orientación en $\partial \mathcal{S}$ y se orienta a $\mathcal{C}$ de la misma manera. \\
+	($\mathcal{C}$ es la proyección sobre el plano $xy$ de la curva $\partial\mathcal{S}$ por construcción)
+
+	\underline{Parametrización de la superficie} \\
+	\[
+		\varphi (x,y) = (x, y, f(x,y))
+	\]
+	con $(x,y) \in D$ que induce la normal en la superficie:
+	\[
+		\varphi_x \times \varphi_y = (1, 0, f_x)\times (0, 1, f_y) = (-f_x, -f_y, 1)
+	\]
+	con tercer componente positiva $\Rightarrow \varphi$ es compatible con la normal $\vec{n}$.
+
+	\underline{Parametrización de las curvas} \\
+	\[
+		\alpha (t) = (x(t), y(t))
+	\]
+	con $t \in [a,b]$ es una parametrización genérica de la curva $\mathcal{C}$. \\
+	Por lo tanto, $\gamma = \varphi \circ \alpha$ es una parametrización de $\partial\mathcal{S}$
+	\[
+		\gamma (t) = \varphi (\alpha (t)) =
+		\varphi (x(t),~y(t)) =
+		(x(t),~y(t),~f(x(t),y(t)))
+	\]
+	Luego \\
+	\begin{gather*}
+		\begin{aligned}
+			\int\limits_{\partial\mathcal{S}}{\vec{X}ds}
+			 & = \int\limits_a^b{\vec{X}(\gamma (t)) \cdot \gamma '(t)dt}                                                                                                                                   \\
+			 & \left(
+			\begin{aligned}
+					\vec{X}(\gamma (t)) & = (P(\gamma (t)),~Q(\gamma (t)),~R(\gamma (t)))                               & \text{pues }\vec{X} = (P,Q,R) \\
+					                    & = (P(\varphi (\alpha (t))),~Q(\varphi (\alpha (t))),~R(\varphi (\alpha (t))))
+					                    & \text{pues } \gamma = \varphi \circ \alpha                                                                    \\
+					\gamma '(t)         & = \left(x'(t),~y'(t),~f_x(x(t), y(t))x'(t) + f_y(x(t), y(t))y'(t) \right)                                     \\
+					                    & = \left(x'(t),~y'(t),~f_x(\alpha (t))x'(t) + f_y(\alpha (t))y'(t) \right)
+					                    & \text{pues } \alpha (t) = (x(t),~y(t))
+				\end{aligned}
+			\right)                                                                                                                                                                                         \\
+			 & = \int\limits_a^b{(~P(\varphi (\alpha (t))),~Q(\varphi (\alpha (t))),~R(\varphi (\alpha (t)))~) \cdot \left(x'(t),~y'(t),~f_x(\alpha (t))x'(t) + f_y(\alpha (t))y'(t) \right)dt}             \\
+			 & \text{operamos y agrupamos en } x'(t) \text{ e } y'(t)                                                                                                                                       \\
+			 & = \int\limits_a^b{\left[ P(\varphi (\alpha (t))) + R(\varphi (\alpha (t)))f_x(\alpha(t))\right]x'(t) + \left[ Q(\varphi (\alpha (t))) + R(\varphi (\alpha (t)))f_y(\alpha(t))\right]y'(t)dt} \\
+			 & = \int\limits_a^b{\left( P(\varphi (\alpha (t))) + R(\varphi (\alpha (t)))f_x(\alpha(t)),~Q(\varphi (\alpha (t))) + R(\varphi (\alpha (t)))f_y(\alpha(t))\right)\cdot (x'(t),y'(t))dt}       \\
+			% abuse pepe abuse
+			 & = \int\limits_a^b{(P\circ \varphi + (R \circ \varphi)f_x,~Q\circ \varphi + (R \circ \varphi)f_y)(\alpha (t))\cdot \alpha '(t) dt}                                                            \\
+			 & \text{vamos a simplificar la notación usando } \vec{Y} = (F,~G)\defeq (P\circ \varphi + (R \circ \varphi)f_x,~Q\circ \varphi + (R \circ \varphi)f_y)                                         \\
+			 & = \int\limits_a^b{(F,G)(\alpha (t))\cdot \alpha '(t)dt}                                                                                                                                             \\
+			 & = \int\limits_a^b{\vec{Y}(\alpha (t))\cdot \alpha '(t)dt}                                                                                                                                           \\
+			 & = \int\limits_{\mathcal{C}}{\vec{Y}ds}                                                                                                                                           \\
+			 & \text{aplicando el Teorema de Green} \\
+			 & = \iint\limits_D{G_x-F_ydxdy}
+		\end{aligned}
+	\end{gather*}
+	Calculemos las derivadas $G_x$ y $F_y$
+	\[
+		G = (Q \circ \varphi) + (R \circ \varphi)f_y
+		\Rightarrow G_x = (Q \circ \varphi)_x + (R \circ \varphi)_xf_y+ (R \circ \varphi)f_{xy}
+	\]
+	Pero 
+	\[
+		(Q\circ \varphi) = (Q(x,y,f(x,y))) 
+		\Rightarrow 
+		(Q\circ \varphi)_x = 
+		(Q_x\circ\varphi) + (Q_z\circ\varphi)f_x
+	\]
+	y 
+	\[
+		(R\circ\varphi) = (R(x,y,f(x,y))) 
+		\Rightarrow 
+		(R\circ\varphi)_x = 
+		(R_x\circ\varphi) + (R_z\circ\varphi)f_x
+	\]
+	entonces
+	\[
+		G_x = (Q_x\circ\varphi) + (Q_z\circ\varphi)f_x + 
+		((R_x\circ\varphi) + (R_z\circ\varphi)f_x)f_y+ 
+		(R \circ \varphi)f_{xy}
+	\]
+	De la misma forma se tiene que
+	\[
+		F_y = (P_y \circ \varphi) + (P_z \circ \varphi)f_y +
+		((R_y\circ\varphi)+(R_z\circ\varphi)f_y)f_x+
+		(R\circ\varphi)f_{xy}
+	\]
+	de donde:
+	\begin{gather*}
+		\begin{aligned}
+			G_x - F_y & = [(Q_z\circ\varphi)-(R_y\circ\varphi)]f_x + [(R_x\circ\varphi)-(P_z\circ\varphi)]f_y+[(Q_x\circ\varphi)-(P_y\circ\varphi)] \\ 
+					  & = [(Q_z - R_y)\circ\varphi]f_x + [(R_x-P_z)\circ\varphi]f_y+(Q_x-P_y)\circ\varphi \\ 
+					  & = [(R_y - Q_z)\circ\varphi](-f_x) + [(R_x-P_z)\circ\varphi](-f_y)+(Q_x-P_y)\circ\varphi (1) \\
+					  & = ([(R_y - Q_z)\circ\varphi] + [(R_x-P_z)\circ\varphi] + (Q_x-P_y)\circ\varphi)\cdot (-f_x,-f<y,1) \\
+					  & = ([(R_y - Q_z)\circ\varphi] + [(R_x-P_z)\circ\varphi] + (Q_x-P_y)\circ\varphi)\cdot (\varphi_x \times \varphi_y) \\
+					  & (\text{observar que siendo }\vec{X} = (P,Q,R) \text{ entonces }Rot(\vec{X})=(R_y-Q_z,P_z-R_x,Q_x-P_y)) \\
+					  & = Rot(\vec{X}\circ\varphi )\cdot (\varphi_x \times\varphi_y)
+		\end{aligned}
+	\end{gather*}
+	De esta manera
+	\[
+		\iint\limits_D{G_x - F_y dxdy} = \iint\limits_D{Rot(\vec{X}\circ\varphi)\cdot (\varphi_x\times\varphi_y)dxdy} = \iint\limits_\mathcal{S}{\vec{X}dS}
+	\]
+\end{proof}
 
 \begin{defbox}{Divergencia}
+	Sea $\vec{X}: U \subseteq \reals^3 \rightarrow \reals^3$ un campo vectorial de clase $C^1$ en un abierto $U$ de $\reals^3$. \\
+	Se define la \textbf{divergencia} del campo $\vec{X} = (P,Q,R)$ como el campo escalar $Div(\vec{X}): U \subseteq \reals^3 \rightarrow \reals$ tal que
+	\begin{equation}
+		Div(\vec{X}) \defeq \frac{\partial{P}}{\partial{x}}+\frac{\partial{Q}}{\partial{y}}+\frac{\partial{R}}{\partial{z}}
+		\label{eq:divergencia}
+	\end{equation}
+	\underline{Observación}
+	\[
+		Div(\vec{X}) = \nabla \cdot \vec{X}
+	\]
 \end{defbox}
 
 \begin{teobox}{Gauss}
-
-	\tcblower
-	\underline{Demostración} \\
+	Sea $\mathcal{S}$ una superficie cerrada de $\reals^3$ que es la frontera de un sólido $E$. \\
+	Si el campo $\vec{X} = (P,Q,R)$ es de clase $C^1$ en un abierto que contiene a $E \cup \mathcal{S}$ se cumple que
+	\begin{equation}
+		\iint_{\mathcal{S}}{\vec{X}dS} =
+		\iiint_{\Omega}{Div(\vec{X})dxdydz}
+		\label{eq:teo_gauss}
+	\end{equation}
+	donde la superficie $\mathcal{S}$ debe estar orientada con la \textbf{normal exterior} al sólido $E$.
 \end{teobox}
+\begin{proof} para sólidos elementales\\
+Si consideramos los campos $\vec{P}\defeq (P,0,0)$,$\vec{Q}\defeq (0,Q,0)$,$\vec{R}\defeq (0,0,R)$ se tiene que
+\[
+	\vec{X} = (P,Q,R) = \vec{P} + \vec{Q} + \vec{R}
+\]
+Por la propiedad de linealidad de las integrales de superficie se cumple que:
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{X}dS} =
+	\iint\limits_{\mathcal{S}^+}{\vec{P}dS} +
+	\iint\limits_{\mathcal{S}^+}{\vec{Q}dS} +
+	\iint\limits_{\mathcal{S}^+}{\vec{R}dS}
+\]
+Por otro lado, por la linealidad de las integrales triples se cumple:
+\[
+	\iiint\limits_E{Div(\vec{X})dxdydz} =
+	\iiint\limits_E{P_x + Q_y + R_z dxdydz} = 
+\]
+\[
+	\iiint\limits_E{P_x dxdydz} + 
+	\iiint\limits_E{Q_y dxdydz} + 
+	\iiint\limits_E{R_z dxdydz}
+\]
+Bastará con probar que:
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{P}dS} =
+	\iiint\limits_E{P_x dxdydz}
+\]
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{Q}dS} =
+	\iiint\limits_E{Q_y dxdydz}
+\]
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{R}dS} =
+	\iiint\limits_E{R_z dxdydz}
+\]
+Demostraremos la tercer igualdad. \\ 
+Siendo $E$ un sólido elemental lo podemos representar de la siguiente manera: 
+\[
+	E = \{ (x,y,z)\in \reals^3: (x,y)\in D, f_1(x,y)< z < g_1(x,y)\}
+\]
+donde $f_1$ y $g_1$ son funciones de clase $C^1$ en el abierto $D_1$ \\ 
+Evaluando la integral triple en $E$:
+\begin{gather*}
+	\begin{aligned}
+		\iiint\limits_E{R_z(x,y,z)dxdydz} & = \iint\limits_D{\left( \int\limits_{f_1(x,y)}^{g_1(x,y)}{R_x(x,y,z)dz}\right)dxdy} \\ 
+										  & = \iint\limits_D{R(x,y,g_1(x,y))-R(x,y,f_1(x,y))dxdy}
+	\end{aligned}
+\end{gather*}
+Por otro lado la superficie $\mathcal{S}^+$ se puede descomponer en $\mathcal{S}_1$ (gráfico de $f_1$) y $\mathcal{S}_2$ (gráfico de $g_1$) y se cumple que: $\mathcal{S}^+ = \mathcal{S}_1 + \mathcal{S}_2$
+y también que:
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{R}dS} =
+	\iint\limits_{\mathcal{S}_1}{\vec{R}dS} +
+	\iint\limits_{\mathcal{S}_2}{\vec{R}dS}
+\]
+$\mathcal{S}_1$ y $\mathcal{S}_2$ están orientadas con tercera componente negativa y positiva respectivamente\footnote{Si esto no se entiende avisar y se agrega mejor explicación}.\\
+\underline{Parametrizaciones} \\ 
+\[
+	\varphi_1:\varphi_1(x,y) = (x,y,f_1(x,y))
+\]
+con $(x,y)\in D_1$. \\ 
+\[
+	(\varphi_1)_x \times (\varphi_1)_y = \left(1, 0, \frac{\partial{f_1}}{\partial{x}}\right) \times\left(0, 1, \frac{\partial{f_1}}{\partial{y}}\right) = \left(-\frac{\partial{f_1}}{\partial{x}},-\frac{\partial{f_1}}{\partial{y}},1\right)
+\]
+Como dijimos, $\vec{n}$ en $\mathcal{S}_1$ tiene componente negativa por lo que $\varphi_1$ \underline{no} es compatible con la orientación.
+Así
+\begin{gather*}
+	\begin{aligned}
+		\iint\limits_{\mathcal{S}_1}{\vec{R}dS} & = - \iint\limits_{D_1}{\vec{R}(\varphi_1(x,y))\cdot ((\varphi_1)_x\times (\varphi_1)_y)~dxdy} \\ 
+		& = - \iint\limits_{D_1}{(0,0,R(\varphi_1(x,y)))\cdot (-\frac{\partial{f_1}}{\partial{x}},-\frac{\partial{f_1}}{\partial{y}},1)~dxdy} \\ 
+		& = - \iint\limits_{D_1}{R(x,y,f_1(x,y))dxdy}
+	\end{aligned}
+\end{gather*}
+Análogamente, tenemos
+\[
+	\varphi_2:\varphi_2(x,y) = (x,y,g_1(x,y))
+\]
+con $(x,y)\in D_1$. \\ 
+\[
+	(\varphi_2)_x \times (\varphi_2)_y = \left(1, 0, \frac{\partial{g_1}}{\partial{x}}\right) \times\left(0, 1, \frac{\partial{g_1}}{\partial{y}}\right) = \left(-\frac{\partial{g_1}}{\partial{x}},-\frac{\partial{g_1}}{\partial{y}},1\right)
+\]
+Como dijimos, $\vec{n}$ en $\mathcal{S}_2$ tiene componente positiva por lo que $\varphi_2$ \underline{es} compatible con la orientación.
+Así
+\begin{gather*}
+	\begin{aligned}
+		\iint\limits_{\mathcal{S}_2}{\vec{R}dS} & = \iint\limits_{D_1}{\vec{R}(\varphi_2(x,y))\cdot ((\varphi_2)_x\times (\varphi_2)_y)~dxdy} \\ 
+		& = \iint\limits_{D_1}{(0,0,R(\varphi_2(x,y)))\cdot (-\frac{\partial{g_1}}{\partial{x}},-\frac{\partial{g_1}}{\partial{y}},1)~dxdy} \\ 
+		& = \iint\limits_{D_1}{R(x,y,g_1(x,y))dxdy}
+	\end{aligned}
+\end{gather*}
+Entonces
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{R}dS} =
+	\iint\limits_{\mathcal{S}_1}{\vec{R}dS} +
+	\iint\limits_{\mathcal{S}_2}{\vec{R}dS} =
+	- \iint\limits_{D_1}{R(x,y,f_1(x,y))dxdy}~
+	+ \iint\limits_{D_1}{R(x,y,g_1(x,y))dxdy}
+\]
+\[
+	\iint\limits_{\mathcal{S}^+}{\vec{R}dS} =
+	\iiint\limits_E{R_z dxdydz}
+\]
+Las otras igualdades son análogas.
+\end{proof}
+
+
+\chapter{Campos y potenciales}
+\begin{defbox}{Campo gradiente}
+	Sea $\vec{X}:U \subseteq \reals^n \rightarrow \reals^n$ un campo vectorial continuo en un abierto $U$.
+	Diremos que $\vec{X}$ es un \textbf{campo gradiente} en $U \iff$ existe una función $f: U \subseteq \reals^n \rightarrow \reals$ de clase $C^1$ tal que
+	\begin{equation}
+		\vec{X} = \nabla f~~~~~~~~~~~ \text{en }U
+		\label{eq:campo_gradiente}
+	\end{equation}
+	A la función $f$ se le llama \textbf{potencial escalar} del campo $X$ en $U$.
+\end{defbox}
+
+\begin{teobox}{Fundamental para campos gradientes}
+	Sea $\vec{X}:U \subseteq \reals^n \rightarrow \reals^n$ un campo vectorial continuo en un abierto $U$ y $\mathcal{C}$ una curva regular y simple en $U$ con origen en $A$ extremos en $B$.
+	Si $\vec{X}$ es un campo gradiente en $U$ entonces
+	\[
+		\int_{\mathcal{C}}{\vec{X}ds} = f(B)-f(A)
+	\]
+	donde $f$ es un potencial escalar del campo $\vec{X}$.
+\end{teobox}
+\begin{proof}
+	Como $\vec{X}$ es un campo gradiente en $U$, existe un potencial escalar $f$ tal que 
+	\[
+		\vec{X} = \nabla f
+	\]
+	 en $U$. Luego si consideramos una parametrización $\alpha : [a,b]\rightarrow \reals^3$ de la curva $\mathcal{C}$ con $\alpha (a) = A$ y $\alpha (b) = B$ \\ 
+	 Tenemos que:
+	 \begin{gather*}
+		 \begin{aligned}
+			 \int\limits_{\mathcal{C}}{\vec{X}ds} & = \int\limits_{\mathcal{C}}{\nabla f~ ds} \\ 
+												  & = \int\limits_a^b{\nabla f(\alpha (t))\cdot \alpha '(t) dt} \\
+												  & = \int\limits_a^b{[f(\alpha (t))]' dt}& \text{por regla de la cadena} \\
+												  & = f(\alpha (b))-f(\alpha (a))\\
+												  & = f(B)-f(A)\\
+		 \end{aligned}
+	 \end{gather*}
+\end{proof}
+
+\begin{defbox}{Campo conservativo}
+	Sea $\vec{X}:U \subseteq \reals^3 \rightarrow \reals^3$ un campo vectorial continuo en un abierto $U$.
+	Diremos que $\vec{X}$ es un \textbf{campo conservativo} en $U \iff \int_{\mathcal{C}_1}{\vec{X}ds} = \int_{\mathcal{C}_2}{\vec{X}ds}$
+	para todo par de curvas $\mathcal{C}_1$ y $\mathcal{C}_2$ contenidas en $U$ que tengan el mismo origen y  el mismo final.
+	Esto se llama la propiedad de \textbf{independencia de camino}.
+\end{defbox}
+
+\begin{propobox}
+	Sea $\vec{X}: U \subseteq \reals^3 \rightarrow \reals^3$ un campo vectorial continuo en un abierto $U$. Entonces
+	$\vec{X}$ es un \textbf{campo conservativo} en $U \iff \int\limits_{\mathcal{C}}{\vec{X}ds} = 0$ para cualquier curva $\mathcal{C}$ cerrada y simple contenida en $U$. 
+\end{propobox}
+\begin{proof}
+	$(\Rightarrow )$ Sea $\mathcal{C}$ una curva cerrada y simple contenida en $U$. \\ 
+	Consideramos dos puntos cualesquiera $A$ y $B$ en $\mathcal{C}$ e indicamos por $\mathcal{C}_1$ al arco de $A$ a $B$ y $\mathcal{C}_2$ al arco de $B$ a $A$. \\ 
+	\[
+		\mathcal{C} = \mathcal{C}_1 \cup \mathcal{C}_2
+	\]
+	Luego
+	\begin{gather*}
+		\begin{aligned}
+			\oint\limits_{\mathcal{C}}{\vec{X}ds} & = \int\limits_{\mathcal{C}_1}{\vec{X}ds} + \int\limits_{\mathcal{C}_2}{\vec{X}ds} \\ 
+												  & = \int\limits_{\mathcal{C}_1}{\vec{X}ds} - \int\limits_{-\mathcal{C}_2}{\vec{X}ds} = 0 		
+		\end{aligned}
+	\end{gather*}
+	(como ambas curvas tiene mismo origen y mismo final, por la independencia de camino las integrales son iguales)
+
+	$(\Leftarrow)$ Consideramos un par de curvas $\mathcal{C}_1$ y $\mathcal{C}_2$ contenidas en $U$ que tienen el mismo origen $A$ y el mismo final $B$. \\ 
+	Luego, $\mathcal{C} = \mathcal{C}_1 \cup (-\mathcal{C}_2)$ es una curva cerrada y simple en $U$ y por hipótesis
+	\begin{gather*}
+		\begin{aligned}
+			\oint\limits_{\mathcal{C}}{\vec{X}ds} = 0 & \iff \oint\limits_{\mathcal{C}_1 \cup (-\mathcal{C}_2)}{\vec{X}ds} = 0 \\
+													  & \iff \int\limits_{\mathcal{C}_1}{\vec{X}ds} + \int\limits_{-\mathcal{C}_2}{\vec{X}ds}  = 0 \\ 
+													  & \iff \int\limits_{\mathcal{C}_1}{\vec{X}ds} = - \int\limits_{-\mathcal{C}_2}{\vec{X}ds} \\ 
+													  & \iff \int\limits_{\mathcal{C}_1}{\vec{X}ds} =  \int\limits_{\mathcal{C}_2}{\vec{X}ds} \\ 
+		\end{aligned}
+	\end{gather*}
+\end{proof}
+
+\underline{Observación} \\ 
+Para curvas cerradas, en física se cambia $\int{}$ por $\oint{}$. En estas notas puede que se utilice esa notación en algun momento.
+
+\begin{defbox}{Campo cerrado}
+	Sea $\vec{X}: U \subseteq \reals^n \rightarrow \reals^n$ un campo vectorial de clase $C^1$ en un abierto $U$. \\ 
+	Diremos que $\vec{X}$ es \textbf{cerrado} en $U\iff \mathds{J}\vec{X}$ es una matriz simétrica en $U$.\\
+	Para el caso de $\reals^2$ y $\reals^3$ tenemos que: \\
+
+	\begin{array}{l|l}
+		\reals^2 & \reals^3 \\ 
+		\vec{X} = (P,Q) & \vec{X} = (P,Q,R) \\ 
+		Q_x - P_y = 0 & Rot(\vec{X}) = 0
+	\end{array}
+\end{defbox}
+
+
+% copiamos la clase
+
+\begin{defbox}{Campo rotor}
+	Sea $\vec{X}:U \subseteq \reals^3 \rightarrow \reals^3$ un campo vectorial continuo en un abierto $U$.
+	Diremos que $\vec{X}$ es un \textbf{campo rotor} en $U \iff$ existe un campo escalar $\vec{F}:U\subseteq \reals^3 \rightarrow \reals^3$ de clase $C^1$ tal que
+	\[
+		\vec{X} = Rot(\vec{F}) ~~~~~~~~~~~~ \text{en }U
+	\]
+	Al campo vectorial $\vec{F}$ se le llama \textbf{potencial vector} del campo $\vec{X}$ en $U$.
+\end{defbox}
+
+\underline{Observación}
+Si $\vec{F}$ es un potencial vector de $\vec{X}$ en $U$.
+$\Rightarrow \vec{F} + \nabla g$ también es un potencial vector de $\vec{X}$ en $U$
+\[
+	Rot\left( \vec{F} + \nabla g \right) = Rot(\vec{F}) + Rot(\nabla g) = Rot(\vec{F})
+\]
+También  hay una analogía en cuanto a las propiedades entre los campos gradientes que vimos anteriormente y los campos rotores. \\
+Sea $\vec{X}$ un campo rotor en $U \Rightarrow$
+\[
+	\iint_{S}{\vec{X}dS} = \int_{\partial S}{\vec{F}ds}
+\]
 
 \end{document}

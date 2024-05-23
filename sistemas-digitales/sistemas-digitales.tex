@@ -684,5 +684,26 @@ Las operaciones se realizaran de esta manera:
 	      \end{itemize}
 \end{itemize}
 
+% vamo a copiar un ejemplo porque sino voy a parecer menos laburador que sgo
+
+\newpage
+Ejemplo: Control de Temperatura\\
+
+Veamos una diagrama del problema que vamos a resolver\\
+\includegraphics[width=8cm]{../Assets/Temp_Control_Problema.jpg}
+
+Tenemos el microprocesador PIC16F877A controlando un interruptor que enciende y apaga un circuito con una resistencia.
+Esta resistencia dicipa calor en un horno, en el cual hay dos sensores, TempSense0 y TempSesnse1.
+El interruptor es controlado por el bit-0 del registro PortA. Las medidas de TempSense0 y TempSense1 pasan por un conversor analógico digital y son enviadas a PortB y PortC respectivamente.
+Queremos diseñar instrucciones tal que el promedio de TempSense0 y TempSense1 sea una temperatura dada, llamemosla Target\_Temp.\\
+
+\underline{Diagrama de Flujo} \\
+\includegraphics[width=10cm]{../Assets/Temp_Control_Diagrama_Flujo.jpg}\\
+Nota: en clase escribe al revez la desigualdad y pone el Yes en el otro lado pero conceptualmente no hay diferencia. \\
+
+El set de instrucciones lo tenemos en el archivo \\./control\_temp/Temp\_Control\_Code - no subroutine.asm.
+
+
+
 
 \end{document}

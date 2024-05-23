@@ -1,6 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1714480613.9374 "sistemas-digitales.tex" "sistemas-digitales.pdf" "sistemas-digitales" 1714480616.80738 0
+["pdflatex"] 1715085916.28057 "sistemas-digitales.tex" "sistemas-digitales.pdf" "sistemas-digitales" 1715085919.48208 0
   "../Assets/SumadorCompleto.png" 1713268091 15109 3062e146a82cb900c008dfe03e436ead ""
+  "../Assets/Temp_Control_Diagrama_Flujo.jpg" 1715082577 564166 9d77fca5a8c1e2c8d95b434bf2d474ac ""
+  "../Assets/Temp_Control_Problema.jpg" 1715081519 280059 68a5e065d5bf2ea2316106075bc450ac ""
   "../Assets/arquitectura_general_uP.JPG" 1713872118 1991259 d30068355c2569904a8c117d87e0628c ""
   "../Assets/arquitectura_simplificada_uP.JPG" 1713871947 1667569 d3525108fa55539eccd040818e087eaf ""
   "../Assets/bistable.png" 1713269800 36584 b5959b3f6a2dda382d1eb7b615abf32b ""
@@ -198,10 +200,10 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1713221777 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1713221938 8222566 b41512c26afefa32e5b58087f78f30a5 ""
   "c:/texlive/2024/texmf.cnf" 1713221741 713 e69b156964470283e0530f5060668171 ""
-  "sistemas-digitales.aux" 1714480616 8293 fb908fad147540f3e45a8cd6bf01a6bf "pdflatex"
-  "sistemas-digitales.out" 1714480616 9082 021552c0adcdd95a6770eb27149be734 "pdflatex"
-  "sistemas-digitales.tex" 1714480613 24942 a1f39081bed87297a37b73f3f5dbd245 ""
-  "sistemas-digitales.toc" 1714480616 4766 4bf601dc5fbd7c65d71828c450591ce8 "pdflatex"
+  "sistemas-digitales.aux" 1715085918 8293 acb5e2c1df6d0e606dd9f431cd8f2115 "pdflatex"
+  "sistemas-digitales.out" 1715085918 9082 021552c0adcdd95a6770eb27149be734 "pdflatex"
+  "sistemas-digitales.tex" 1715085915 26087 0909003d3fd8a2a8e885b8d91b4780ec ""
+  "sistemas-digitales.toc" 1715085918 4766 4bf601dc5fbd7c65d71828c450591ce8 "pdflatex"
   (generated)
   "sistemas-digitales.aux"
   "sistemas-digitales.log"

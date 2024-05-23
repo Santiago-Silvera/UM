@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1714396409.25608 "medidas-instalaciones.tex" "medidas-instalaciones.pdf" "medidas-instalaciones" 1714396411.25261 0
+["pdflatex"] 1715346250.05391 "medidas-instalaciones.tex" "medidas-instalaciones.pdf" "medidas-instalaciones" 1715346252.23195 0
   "../Assets/amperimetro_galvanometro.jpg" 1714132136 6748 06bb3c6628c68d18605a6dc415361168 ""
   "../Assets/amperimetro_galvanometro_ac.jpg" 1714132872 14282 7db9cd21f51e8b79e6674a7416e457b4 ""
   "../Assets/condensador_desacople.png" 1714391536 2961 57c9f4c62fac45e81bfab14458e0ec25 ""
@@ -80,9 +80,9 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1713221777 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1713221938 8222566 b41512c26afefa32e5b58087f78f30a5 ""
   "c:/texlive/2024/texmf.cnf" 1713221741 713 e69b156964470283e0530f5060668171 ""
-  "medidas-instalaciones.aux" 1714396410 3472 fe8d3f335ebf7913aacac8934199c074 "pdflatex"
-  "medidas-instalaciones.tex" 1714396408 8966 dc846d6db37e3fbe5572f8ecac4d6042 ""
-  "medidas-instalaciones.toc" 1714396410 1937 eaa5c7b1182f2264f76277a3bbfaf8f1 "pdflatex"
+  "medidas-instalaciones.aux" 1715346251 3472 fe8d3f335ebf7913aacac8934199c074 "pdflatex"
+  "medidas-instalaciones.tex" 1715346248 8965 3e9c95e30985fe67bcb2e6dae0975e3b ""
+  "medidas-instalaciones.toc" 1715346251 1937 eaa5c7b1182f2264f76277a3bbfaf8f1 "pdflatex"
   (generated)
   "medidas-instalaciones.aux"
   "medidas-instalaciones.log"
